@@ -9,9 +9,9 @@
       <numberTransitions>6</numberTransitions>
       <numberDelayParameters>0</numberDelayParameters>
       <numberMarkingParameters>0</numberMarkingParameters>
-      <numberRewardMeasures>2</numberRewardMeasures>
+      <numberRewardMeasures>3</numberRewardMeasures>
       <numberLabelModels>0</numberLabelModels>
-      <numberDefinitions>11</numberDefinitions>
+      <numberDefinitions>13</numberDefinitions>
       <places>
         <org.modcs.tools.spn.model.Place>
           <name>P0</name>
@@ -30,9 +30,9 @@
             <numberTransitions>6</numberTransitions>
             <numberDelayParameters>0</numberDelayParameters>
             <numberMarkingParameters>0</numberMarkingParameters>
-            <numberRewardMeasures>2</numberRewardMeasures>
+            <numberRewardMeasures>3</numberRewardMeasures>
             <numberLabelModels>0</numberLabelModels>
-            <numberDefinitions>11</numberDefinitions>
+            <numberDefinitions>13</numberDefinitions>
             <places>
               <org.modcs.tools.spn.model.Place reference="../../.."/>
               <org.modcs.tools.spn.model.Place>
@@ -840,7 +840,7 @@
                   </rigthExpression>
                 </expression>
                 <stringExpression>(((E{#P2})+(E{#P4})+(E{#P6})+(E{#P7}))/((E{#P7})/STF))</stringExpression>
-                <value>693.079902891664</value>
+                <value>790.108558516293</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>0.72</x>
                   <y>0.28</y>
@@ -880,7 +880,7 @@
                       <realValue>
                         <realParameter>
                           <identifier>
-                            <identifier>CoreF</identifier>
+                            <identifier>MaxCoreF</identifier>
                             <showedMessage>false</showedMessage>
                           </identifier>
                         </realParameter>
@@ -898,11 +898,70 @@
                     </realValue>
                   </rigthExpression>
                 </expression>
-                <stringExpression>(E{#P7}/(CoreF))*100</stringExpression>
-                <value>65.65232131152358</value>
+                <stringExpression>(E{#P7}/(MaxCoreF))*100</stringExpression>
+                <value>83.58251507982155</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>0.76</x>
                   <y>0.44</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.RewardMeasure>
+              <org.modcs.tools.spn.model.RewardMeasure>
+                <name>UE</name>
+                <expression>
+                  <leftExpression>
+                    <leftExpression>
+                      <realValue>
+                        <rewItem>
+                          <expectation>
+                            <markingFunction>
+                              <integerValue>
+                                <marking>
+                                  <placeName>
+                                    <identifier>
+                                      <identifier>P4</identifier>
+                                      <showedMessage>false</showedMessage>
+                                    </identifier>
+                                  </placeName>
+                                </marking>
+                              </integerValue>
+                            </markingFunction>
+                            <listTokensAndTime/>
+                            <totalTime>0.0</totalTime>
+                          </expectation>
+                        </rewItem>
+                      </realValue>
+                    </leftExpression>
+                    <numericOperator>
+                      <operator>/</operator>
+                    </numericOperator>
+                    <rigthExpression>
+                      <realValue>
+                        <realParameter>
+                          <identifier>
+                            <identifier>MaxCoreE</identifier>
+                            <showedMessage>false</showedMessage>
+                          </identifier>
+                        </realParameter>
+                      </realValue>
+                    </rigthExpression>
+                  </leftExpression>
+                  <numericOperator>
+                    <operator>*</operator>
+                  </numericOperator>
+                  <rigthExpression>
+                    <realValue>
+                      <realConstant>
+                        <real>100</real>
+                      </realConstant>
+                    </realValue>
+                  </rigthExpression>
+                </expression>
+                <stringExpression>(E{#P4}/(MaxCoreE))*100</stringExpression>
+                <value>6.17644512737782</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>0.76</x>
+                  <y>0.6</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1018,6 +1077,26 @@
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>MaxCoreE</name>
+                <type>INTEGER</type>
+                <value>16</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>2.9</x>
+                  <y>0.5866666666666667</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>MaxCoreF</name>
+                <type>INTEGER</type>
+                <value>16</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>4.693333333333333</x>
+                  <y>0.5533333333333333</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
             </definitions>
           </edspn>
           <initialStringMarking>1</initialStringMarking>
@@ -1063,6 +1142,7 @@
       <rewardMeasures>
         <org.modcs.tools.spn.model.RewardMeasure reference="../../places/org.modcs.tools.spn.model.Place/edspn/rewardMeasures/org.modcs.tools.spn.model.RewardMeasure"/>
         <org.modcs.tools.spn.model.RewardMeasure reference="../../places/org.modcs.tools.spn.model.Place/edspn/rewardMeasures/org.modcs.tools.spn.model.RewardMeasure[2]"/>
+        <org.modcs.tools.spn.model.RewardMeasure reference="../../places/org.modcs.tools.spn.model.Place/edspn/rewardMeasures/org.modcs.tools.spn.model.RewardMeasure[3]"/>
       </rewardMeasures>
       <definitions>
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition"/>
@@ -1076,6 +1156,8 @@
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[9]"/>
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[10]"/>
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[11]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[12]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[13]"/>
       </definitions>
     </edspn>
   </appSPN>
