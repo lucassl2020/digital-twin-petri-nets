@@ -6,7 +6,7 @@
   <appSPN>
     <edspn>
       <numberPlaces>10</numberPlaces>
-      <numberTransitions>6</numberTransitions>
+      <numberTransitions>8</numberTransitions>
       <numberDelayParameters>0</numberDelayParameters>
       <numberMarkingParameters>0</numberMarkingParameters>
       <numberRewardMeasures>3</numberRewardMeasures>
@@ -27,7 +27,7 @@
           </positionTag>
           <edspn>
             <numberPlaces>10</numberPlaces>
-            <numberTransitions>6</numberTransitions>
+            <numberTransitions>8</numberTransitions>
             <numberDelayParameters>0</numberDelayParameters>
             <numberMarkingParameters>0</numberMarkingParameters>
             <numberRewardMeasures>3</numberRewardMeasures>
@@ -100,7 +100,7 @@
               </org.modcs.tools.spn.model.Place>
               <org.modcs.tools.spn.model.Place>
                 <name>P5</name>
-                <marking>16</marking>
+                <marking>12</marking>
                 <stringMarking>CoreE</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>3.12</x>
@@ -164,7 +164,7 @@
               </org.modcs.tools.spn.model.Place>
               <org.modcs.tools.spn.model.Place>
                 <name>P9</name>
-                <marking>16</marking>
+                <marking>12</marking>
                 <stringMarking>CoreF</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>4.96</x>
@@ -576,6 +576,152 @@
                 <priority>1</priority>
                 <weight>1.0</weight>
               </org.modcs.tools.spn.model.TransitionImmediate>
+              <org.modcs.tools.spn.model.TransitionImmediate>
+                <name>TI3</name>
+                <firingPolicy>SINGLE_SERVER</firingPolicy>
+                <raceType>RACE_WITH_ENABLING_MEMORY</raceType>
+                <turned>false</turned>
+                <delay>0.0</delay>
+                <description></description>
+                <arcInputs>
+                  <org.modcs.tools.spn.model.ArcInput>
+                    <lineStyle>12</lineStyle>
+                    <place reference="../../../../../places/org.modcs.tools.spn.model.Place[6]"/>
+                    <multiplicity>1</multiplicity>
+                    <transition class="org.modcs.tools.spn.model.TransitionImmediate" reference="../../.."/>
+                  </org.modcs.tools.spn.model.ArcInput>
+                </arcInputs>
+                <positionTransition class="java.awt.geom.Point2D$Double">
+                  <x>3.546666666666667</x>
+                  <y>0.8133333333333334</y>
+                </positionTransition>
+                <countRemaingInList>0</countRemaingInList>
+                <priority>1</priority>
+                <stringPriority></stringPriority>
+                <weight>1.0</weight>
+                <logicCondition>
+                  <comparison>
+                    <markingFunctionLeft>
+                      <markingFunctionLeft>
+                        <integerValue>
+                          <marking>
+                            <placeName>
+                              <identifier>
+                                <identifier>P5</identifier>
+                                <showedMessage>false</showedMessage>
+                              </identifier>
+                            </placeName>
+                            <place reference="../../../../../../../../../places/org.modcs.tools.spn.model.Place[6]"/>
+                          </marking>
+                        </integerValue>
+                      </markingFunctionLeft>
+                      <numericOperator>
+                        <operator>+</operator>
+                      </numericOperator>
+                      <markingFunctionRight>
+                        <integerValue>
+                          <marking>
+                            <placeName>
+                              <identifier>
+                                <identifier>P4</identifier>
+                                <showedMessage>false</showedMessage>
+                              </identifier>
+                            </placeName>
+                            <place reference="../../../../../../../../../places/org.modcs.tools.spn.model.Place[5]"/>
+                          </marking>
+                        </integerValue>
+                      </markingFunctionRight>
+                    </markingFunctionLeft>
+                    <comparisonOperator>
+                      <operator>&gt;</operator>
+                    </comparisonOperator>
+                    <markingFunctionRight>
+                      <integerValue>
+                        <integerParameter>
+                          <identifier>
+                            <identifier>MaxCoreE</identifier>
+                            <showedMessage>false</showedMessage>
+                          </identifier>
+                        </integerParameter>
+                      </integerValue>
+                    </markingFunctionRight>
+                  </comparison>
+                </logicCondition>
+                <stringLogicCondition>(((#P5)+(#P4))&gt;(MaxCoreE))</stringLogicCondition>
+              </org.modcs.tools.spn.model.TransitionImmediate>
+              <org.modcs.tools.spn.model.TransitionImmediate>
+                <name>TI4</name>
+                <firingPolicy>SINGLE_SERVER</firingPolicy>
+                <raceType>RACE_WITH_ENABLING_MEMORY</raceType>
+                <turned>false</turned>
+                <delay>0.0</delay>
+                <description></description>
+                <arcInputs>
+                  <org.modcs.tools.spn.model.ArcInput>
+                    <lineStyle>12</lineStyle>
+                    <place reference="../../../../../places/org.modcs.tools.spn.model.Place[10]"/>
+                    <multiplicity>1</multiplicity>
+                    <transition class="org.modcs.tools.spn.model.TransitionImmediate" reference="../../.."/>
+                  </org.modcs.tools.spn.model.ArcInput>
+                </arcInputs>
+                <positionTransition class="java.awt.geom.Point2D$Double">
+                  <x>5.266666666666667</x>
+                  <y>0.8133333333333334</y>
+                </positionTransition>
+                <countRemaingInList>0</countRemaingInList>
+                <priority>1</priority>
+                <stringPriority></stringPriority>
+                <weight>1.0</weight>
+                <logicCondition>
+                  <comparison>
+                    <markingFunctionLeft>
+                      <markingFunctionLeft>
+                        <integerValue>
+                          <marking>
+                            <placeName>
+                              <identifier>
+                                <identifier>P9</identifier>
+                                <showedMessage>false</showedMessage>
+                              </identifier>
+                            </placeName>
+                            <place reference="../../../../../../../../../places/org.modcs.tools.spn.model.Place[10]"/>
+                          </marking>
+                        </integerValue>
+                      </markingFunctionLeft>
+                      <numericOperator>
+                        <operator>+</operator>
+                      </numericOperator>
+                      <markingFunctionRight>
+                        <integerValue>
+                          <marking>
+                            <placeName>
+                              <identifier>
+                                <identifier>P7</identifier>
+                                <showedMessage>false</showedMessage>
+                              </identifier>
+                            </placeName>
+                            <place reference="../../../../../../../../../places/org.modcs.tools.spn.model.Place[8]"/>
+                          </marking>
+                        </integerValue>
+                      </markingFunctionRight>
+                    </markingFunctionLeft>
+                    <comparisonOperator>
+                      <operator>&gt;</operator>
+                    </comparisonOperator>
+                    <markingFunctionRight>
+                      <integerValue>
+                        <integerParameter>
+                          <identifier>
+                            <identifier>MaxCoreF</identifier>
+                            <showedMessage>false</showedMessage>
+                          </identifier>
+                        </integerParameter>
+                      </integerValue>
+                    </markingFunctionRight>
+                  </comparison>
+                </logicCondition>
+                <stringLogicCondition>(((#P9)+(#P7))&gt;(MaxCoreF))</stringLogicCondition>
+              </org.modcs.tools.spn.model.TransitionImmediate>
             </transitions>
             <labelModels>
               <org.modcs.tools.spn.model.LabelModel>
@@ -688,6 +834,20 @@
                 <position class="java.awt.geom.Point2D$Double">
                   <x>5.031428571428571</x>
                   <y>1.3666666666666667</y>
+                </position>
+              </org.modcs.tools.spn.model.LabelModel>
+              <org.modcs.tools.spn.model.LabelModel>
+                <name>TI3</name>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>3.654285714285714</x>
+                  <y>1.38</y>
+                </position>
+              </org.modcs.tools.spn.model.LabelModel>
+              <org.modcs.tools.spn.model.LabelModel>
+                <name>TI4</name>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>5.367619047619048</x>
+                  <y>1.3933333333333333</y>
                 </position>
               </org.modcs.tools.spn.model.LabelModel>
             </labelModels>
@@ -840,7 +1000,7 @@
                   </rigthExpression>
                 </expression>
                 <stringExpression>(((E{#P2})+(E{#P4})+(E{#P6})+(E{#P7}))/((E{#P7})/STF))</stringExpression>
-                <value>790.108558516293</value>
+                <value>1032.779925033035</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>0.72</x>
                   <y>0.28</y>
@@ -899,7 +1059,7 @@
                   </rigthExpression>
                 </expression>
                 <stringExpression>(E{#P7}/(MaxCoreF))*100</stringExpression>
-                <value>83.58251507982155</value>
+                <value>85.7183956425134</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>0.76</x>
                   <y>0.44</y>
@@ -958,10 +1118,10 @@
                   </rigthExpression>
                 </expression>
                 <stringExpression>(E{#P4}/(MaxCoreE))*100</stringExpression>
-                <value>6.17644512737782</value>
+                <value>8.63897106549836</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>0.76</x>
-                  <y>0.6</y>
+                  <x>0.8</x>
+                  <y>0.64</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1080,7 +1240,7 @@
               <org.modcs.tools.spn.model.Definition>
                 <name>MaxCoreE</name>
                 <type>INTEGER</type>
-                <value>16</value>
+                <value>12</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>2.9</x>
                   <y>0.5866666666666667</y>
@@ -1090,7 +1250,7 @@
               <org.modcs.tools.spn.model.Definition>
                 <name>MaxCoreF</name>
                 <type>INTEGER</type>
-                <value>16</value>
+                <value>12</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>4.693333333333333</x>
                   <y>0.5533333333333333</y>
@@ -1120,6 +1280,8 @@
         <org.modcs.tools.spn.model.TransitionExponential reference="../../places/org.modcs.tools.spn.model.Place/edspn/transitions/org.modcs.tools.spn.model.TransitionExponential[2]"/>
         <org.modcs.tools.spn.model.TransitionExponential reference="../../places/org.modcs.tools.spn.model.Place/edspn/transitions/org.modcs.tools.spn.model.TransitionExponential[3]"/>
         <org.modcs.tools.spn.model.TransitionImmediate reference="../../places/org.modcs.tools.spn.model.Place/edspn/transitions/org.modcs.tools.spn.model.TransitionImmediate[3]"/>
+        <org.modcs.tools.spn.model.TransitionImmediate reference="../../places/org.modcs.tools.spn.model.Place/edspn/transitions/org.modcs.tools.spn.model.TransitionImmediate[4]"/>
+        <org.modcs.tools.spn.model.TransitionImmediate reference="../../places/org.modcs.tools.spn.model.Place/edspn/transitions/org.modcs.tools.spn.model.TransitionImmediate[5]"/>
       </transitions>
       <labelModels>
         <org.modcs.tools.spn.model.LabelModel reference="../../places/org.modcs.tools.spn.model.Place/edspn/labelModels/org.modcs.tools.spn.model.LabelModel"/>
@@ -1138,6 +1300,8 @@
         <org.modcs.tools.spn.model.LabelModel reference="../../places/org.modcs.tools.spn.model.Place/edspn/labelModels/org.modcs.tools.spn.model.LabelModel[14]"/>
         <org.modcs.tools.spn.model.LabelModel reference="../../places/org.modcs.tools.spn.model.Place/edspn/labelModels/org.modcs.tools.spn.model.LabelModel[15]"/>
         <org.modcs.tools.spn.model.LabelModel reference="../../places/org.modcs.tools.spn.model.Place/edspn/labelModels/org.modcs.tools.spn.model.LabelModel[16]"/>
+        <org.modcs.tools.spn.model.LabelModel reference="../../places/org.modcs.tools.spn.model.Place/edspn/labelModels/org.modcs.tools.spn.model.LabelModel[17]"/>
+        <org.modcs.tools.spn.model.LabelModel reference="../../places/org.modcs.tools.spn.model.Place/edspn/labelModels/org.modcs.tools.spn.model.LabelModel[18]"/>
       </labelModels>
       <rewardMeasures>
         <org.modcs.tools.spn.model.RewardMeasure reference="../../places/org.modcs.tools.spn.model.Place/edspn/rewardMeasures/org.modcs.tools.spn.model.RewardMeasure"/>
