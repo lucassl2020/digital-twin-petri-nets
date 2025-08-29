@@ -11,7 +11,7 @@
       <numberMarkingParameters>0</numberMarkingParameters>
       <numberRewardMeasures>9</numberRewardMeasures>
       <numberLabelModels>0</numberLabelModels>
-      <numberDefinitions>11</numberDefinitions>
+      <numberDefinitions>19</numberDefinitions>
       <places>
         <org.modcs.tools.spn.model.Place>
           <name>P0</name>
@@ -32,7 +32,7 @@
             <numberMarkingParameters>0</numberMarkingParameters>
             <numberRewardMeasures>9</numberRewardMeasures>
             <numberLabelModels>0</numberLabelModels>
-            <numberDefinitions>11</numberDefinitions>
+            <numberDefinitions>19</numberDefinitions>
             <places>
               <org.modcs.tools.spn.model.Place reference="../../.."/>
               <org.modcs.tools.spn.model.Place>
@@ -99,7 +99,7 @@
               <org.modcs.tools.spn.model.Place>
                 <name>P5</name>
                 <marking>0</marking>
-                <stringMarking>0</stringMarking>
+                <stringMarking>UsoDaFilaE</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>3.6</x>
                   <y>1.64</y>
@@ -109,7 +109,8 @@
                   <y>252</y>
                 </positionTag>
                 <edspn reference="../../.."/>
-                <initialStringMarking>0</initialStringMarking>
+                <initialStringMarking>UsoDaFilaE</initialStringMarking>
+                <description></description>
               </org.modcs.tools.spn.model.Place>
               <org.modcs.tools.spn.model.Place>
                 <name>P6</name>
@@ -130,7 +131,7 @@
               <org.modcs.tools.spn.model.Place>
                 <name>P7</name>
                 <marking>0</marking>
-                <stringMarking>0</stringMarking>
+                <stringMarking>UsoDoCoreE</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>4.6</x>
                   <y>1.6</y>
@@ -140,7 +141,8 @@
                   <y>254</y>
                 </positionTag>
                 <edspn reference="../../.."/>
-                <initialStringMarking>0</initialStringMarking>
+                <initialStringMarking>UsoDoCoreE</initialStringMarking>
+                <description></description>
               </org.modcs.tools.spn.model.Place>
               <org.modcs.tools.spn.model.Place>
                 <name>P8</name>
@@ -223,7 +225,7 @@
               <org.modcs.tools.spn.model.Place>
                 <name>P13</name>
                 <marking>0</marking>
-                <stringMarking>0</stringMarking>
+                <stringMarking>UsoDaFilaF</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>7.8</x>
                   <y>1.64</y>
@@ -233,7 +235,8 @@
                   <y>410</y>
                 </positionTag>
                 <edspn reference="../../.."/>
-                <initialStringMarking>0</initialStringMarking>
+                <initialStringMarking>UsoDaFilaF</initialStringMarking>
+                <description></description>
               </org.modcs.tools.spn.model.Place>
               <org.modcs.tools.spn.model.Place>
                 <name>P16</name>
@@ -254,7 +257,7 @@
               <org.modcs.tools.spn.model.Place>
                 <name>P17</name>
                 <marking>0</marking>
-                <stringMarking>0</stringMarking>
+                <stringMarking>UsoDoCoreF</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>9.12</x>
                   <y>1.68</y>
@@ -264,7 +267,8 @@
                   <y>242</y>
                 </positionTag>
                 <edspn reference="../../.."/>
-                <initialStringMarking>0</initialStringMarking>
+                <initialStringMarking>UsoDoCoreF</initialStringMarking>
+                <description></description>
               </org.modcs.tools.spn.model.Place>
             </places>
             <delayParameters/>
@@ -880,8 +884,8 @@
               <org.modcs.tools.spn.model.LabelModel>
                 <name>P5</name>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>3.6914285714285713</x>
-                  <y>1.94</y>
+                  <x>3.68</x>
+                  <y>1.92</y>
                 </position>
               </org.modcs.tools.spn.model.LabelModel>
               <org.modcs.tools.spn.model.LabelModel>
@@ -1107,8 +1111,8 @@
                 <stringExpression>(((E{#P2})+(E{#P3}))/CapR)*100</stringExpression>
                 <value>48.93623836365748</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>1.96</x>
-                  <y>2.12</y>
+                  <x>1.88</x>
+                  <y>2.76</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1166,8 +1170,8 @@
                 <stringExpression>(E{#P5}/CapE)*100</stringExpression>
                 <value>36.058005491174754</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>3.24</x>
-                  <y>2.16</y>
+                  <x>3.2800000000000002</x>
+                  <y>2.68</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1255,8 +1259,8 @@
                 <stringExpression>(P{((#P1&gt;0)AND(#P4=0))})*100</stringExpression>
                 <value>20.565688406103714</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>4.68</x>
-                  <y>2.76</y>
+                  <x>4.92</x>
+                  <y>3.52</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1314,8 +1318,8 @@
                 <stringExpression>((E{#P7})/(CoreE))*100</stringExpression>
                 <value>74.73185044578237</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>4.36</x>
-                  <y>2.16</y>
+                  <x>4.44</x>
+                  <y>2.68</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1400,8 +1404,8 @@
                 <stringExpression>(((E{#P9})+(E{#P11}))/CapG)*100</stringExpression>
                 <value>55.233182253232115</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>5.6</x>
-                  <y>2.16</y>
+                  <x>5.8</x>
+                  <y>2.6</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1459,8 +1463,8 @@
                 <stringExpression>(E{#P13}/CapF)*100</stringExpression>
                 <value>63.685717232782835</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>7.48</x>
-                  <y>2.36</y>
+                  <x>7.64</x>
+                  <y>2.72</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1518,8 +1522,8 @@
                 <stringExpression>(E{#P17}/CoreF)*100</stringExpression>
                 <value>90.91291853582575</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>8.84</x>
-                  <y>2.36</y>
+                  <x>9.08</x>
+                  <y>2.76</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1808,8 +1812,8 @@
                 <stringExpression>((E{#P1})+(E{#P2})+(E{#P3})+(E{#P5})+(E{#P7})+(E{#P9})+(E{#P11})+(E{#P13})+(E{#P17}))/((E{#P17})/STF)</stringExpression>
                 <value>62448.90822903885</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>4.68</x>
-                  <y>3.16</y>
+                  <x>4.92</x>
+                  <y>3.92</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1855,8 +1859,8 @@
                 <stringExpression>(E{#P17})/STF</stringExpression>
                 <value>0.004545645926791291</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>4.68</x>
-                  <y>2.96</y>
+                  <x>4.92</x>
+                  <y>3.72</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1867,8 +1871,8 @@
                 <type>DOUBLE</type>
                 <value>60</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>0.3933333333333333</x>
-                  <y>2.34</y>
+                  <x>0.23333333333333334</x>
+                  <y>2.66</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.Definition>
@@ -1937,8 +1941,8 @@
                 <type>DOUBLE</type>
                 <value>1500</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>5.92</x>
-                  <y>2.4133333333333336</y>
+                  <x>6.48</x>
+                  <y>2.8933333333333335</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.Definition>
@@ -1947,8 +1951,8 @@
                 <type>DOUBLE</type>
                 <value>300</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>3.96</x>
-                  <y>2.5066666666666664</y>
+                  <x>3.4</x>
+                  <y>3.0666666666666664</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.Definition>
@@ -1957,8 +1961,8 @@
                 <type>DOUBLE</type>
                 <value>800</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>1.78</x>
-                  <y>2.6</y>
+                  <x>1.42</x>
+                  <y>3.08</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.Definition>
@@ -1969,6 +1973,86 @@
                 <position class="java.awt.geom.Point2D$Double">
                   <x>9.533333333333335</x>
                   <y>0.4866666666666667</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>UsoDaFilaE</name>
+                <type>INTEGER</type>
+                <value>0</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>3.4133333333333336</x>
+                  <y>2.2733333333333334</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>UsoDoCoreE</name>
+                <type>INTEGER</type>
+                <value>0</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>4.693333333333333</x>
+                  <y>2.2333333333333334</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>UsoDaFilaF</name>
+                <type>INTEGER</type>
+                <value>0</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>7.6866666666666665</x>
+                  <y>2.1466666666666665</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>UsoDoCoreF</name>
+                <type>INTEGER</type>
+                <value>0</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>8.966666666666667</x>
+                  <y>2.24</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>MaxCapE</name>
+                <type>INTEGER</type>
+                <value>200</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>2.5933333333333333</x>
+                  <y>1.26</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>MaxCoreE</name>
+                <type>INTEGER</type>
+                <value>0</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>4.913333333333333</x>
+                  <y>1.26</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>MaxCapF</name>
+                <type>INTEGER</type>
+                <value>0</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>6.873333333333333</x>
+                  <y>1.22</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>MaxCoreF</name>
+                <type>INTEGER</type>
+                <value>0</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>9.666666666666666</x>
+                  <y>1.2733333333333334</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.Definition>
@@ -2057,6 +2141,14 @@
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[9]"/>
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[10]"/>
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[11]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[12]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[13]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[14]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[15]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[16]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[17]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[18]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[19]"/>
       </definitions>
     </edspn>
   </appSPN>
