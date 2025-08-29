@@ -144,7 +144,7 @@
               </org.modcs.tools.spn.model.Place>
               <org.modcs.tools.spn.model.Place>
                 <name>P8</name>
-                <marking>2</marking>
+                <marking>8</marking>
                 <stringMarking>CoreE</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>4.6</x>
@@ -237,7 +237,7 @@
               </org.modcs.tools.spn.model.Place>
               <org.modcs.tools.spn.model.Place>
                 <name>P16</name>
-                <marking>16</marking>
+                <marking>10</marking>
                 <stringMarking>CoreF</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>9.12</x>
@@ -1105,10 +1105,10 @@
                   </rigthExpression>
                 </expression>
                 <stringExpression>(((E{#P2})+(E{#P3}))/CapR)*100</stringExpression>
-                <value>0.49003126741631386</value>
+                <value>48.93623836365748</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>1.92</x>
-                  <y>2.16</y>
+                  <x>1.96</x>
+                  <y>2.12</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1164,7 +1164,7 @@
                   </rigthExpression>
                 </expression>
                 <stringExpression>(E{#P5}/CapE)*100</stringExpression>
-                <value>0.14108967743359738</value>
+                <value>36.058005491174754</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>3.24</x>
                   <y>2.16</y>
@@ -1253,7 +1253,7 @@
                   </rigthExpression>
                 </expression>
                 <stringExpression>(P{((#P1&gt;0)AND(#P4=0))})*100</stringExpression>
-                <value>0.0</value>
+                <value>20.565688406103714</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>4.68</x>
                   <y>2.76</y>
@@ -1312,7 +1312,7 @@
                   </rigthExpression>
                 </expression>
                 <stringExpression>((E{#P7})/(CoreE))*100</stringExpression>
-                <value>48.26708573794835</value>
+                <value>74.73185044578237</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>4.36</x>
                   <y>2.16</y>
@@ -1398,7 +1398,7 @@
                   </rigthExpression>
                 </expression>
                 <stringExpression>(((E{#P9})+(E{#P11}))/CapG)*100</stringExpression>
-                <value>0.23397921788466122</value>
+                <value>55.233182253232115</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>5.6</x>
                   <y>2.16</y>
@@ -1457,7 +1457,7 @@
                   </rigthExpression>
                 </expression>
                 <stringExpression>(E{#P13}/CapF)*100</stringExpression>
-                <value>3.346462615917815</value>
+                <value>63.685717232782835</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>7.48</x>
                   <y>2.36</y>
@@ -1516,7 +1516,7 @@
                   </rigthExpression>
                 </expression>
                 <stringExpression>(E{#P17}/CoreF)*100</stringExpression>
-                <value>90.54915120380917</value>
+                <value>90.91291853582575</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>8.84</x>
                   <y>2.36</y>
@@ -1806,7 +1806,7 @@
                   </rigthExpression>
                 </expression>
                 <stringExpression>((E{#P1})+(E{#P2})+(E{#P3})+(E{#P5})+(E{#P7})+(E{#P9})+(E{#P11})+(E{#P13})+(E{#P17}))/((E{#P17})/STF)</stringExpression>
-                <value>0.9483213320276482</value>
+                <value>62448.90822903885</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>4.68</x>
                   <y>3.16</y>
@@ -1853,7 +1853,7 @@
                   </rigthExpression>
                 </expression>
                 <stringExpression>(E{#P17})/STF</stringExpression>
-                <value>24.146440321015774</value>
+                <value>0.004545645926791291</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>4.68</x>
                   <y>2.96</y>
@@ -1865,10 +1865,10 @@
               <org.modcs.tools.spn.model.Definition>
                 <name>AD</name>
                 <type>DOUBLE</type>
-                <value>0.0416</value>
+                <value>60</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>0.35333333333333333</x>
-                  <y>2.3</y>
+                  <x>0.3933333333333333</x>
+                  <y>2.34</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.Definition>
@@ -1895,7 +1895,7 @@
               <org.modcs.tools.spn.model.Definition>
                 <name>CoreE</name>
                 <type>INTEGER</type>
-                <value>2</value>
+                <value>8</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>4.373333333333333</x>
                   <y>0.9333333333333333</y>
@@ -1925,7 +1925,7 @@
               <org.modcs.tools.spn.model.Definition>
                 <name>CoreF</name>
                 <type>INTEGER</type>
-                <value>16</value>
+                <value>10</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>8.886666666666667</x>
                   <y>0.94</y>
@@ -1935,7 +1935,7 @@
               <org.modcs.tools.spn.model.Definition>
                 <name>ST2</name>
                 <type>DOUBLE</type>
-                <value>0.01</value>
+                <value>1500</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>5.92</x>
                   <y>2.4133333333333336</y>
@@ -1945,19 +1945,19 @@
               <org.modcs.tools.spn.model.Definition>
                 <name>ST1</name>
                 <type>DOUBLE</type>
-                <value>0.04</value>
+                <value>300</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>3.68</x>
-                  <y>2.5866666666666664</y>
+                  <x>3.96</x>
+                  <y>2.5066666666666664</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.Definition>
               <org.modcs.tools.spn.model.Definition>
                 <name>STR</name>
                 <type>DOUBLE</type>
-                <value>0.01</value>
+                <value>800</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>1.82</x>
+                  <x>1.78</x>
                   <y>2.6</y>
                 </position>
                 <description></description>
@@ -1965,7 +1965,7 @@
               <org.modcs.tools.spn.model.Definition>
                 <name>STF</name>
                 <type>DOUBLE</type>
-                <value>0.6</value>
+                <value>2000</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>9.533333333333335</x>
                   <y>0.4866666666666667</y>
