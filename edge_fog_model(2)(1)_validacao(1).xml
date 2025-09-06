@@ -11,7 +11,7 @@
       <numberMarkingParameters>0</numberMarkingParameters>
       <numberRewardMeasures>4</numberRewardMeasures>
       <numberLabelModels>0</numberLabelModels>
-      <numberDefinitions>17</numberDefinitions>
+      <numberDefinitions>19</numberDefinitions>
       <places>
         <org.modcs.tools.spn.model.Place>
           <name>P0</name>
@@ -32,7 +32,7 @@
             <numberMarkingParameters>0</numberMarkingParameters>
             <numberRewardMeasures>4</numberRewardMeasures>
             <numberLabelModels>0</numberLabelModels>
-            <numberDefinitions>17</numberDefinitions>
+            <numberDefinitions>19</numberDefinitions>
             <places>
               <org.modcs.tools.spn.model.Place reference="../../.."/>
               <org.modcs.tools.spn.model.Place>
@@ -1096,9 +1096,21 @@
                     </entry>
                     <entry>
                       <string>Standard Deviation</string>
-                      <org.modcs.tools.spn.simulator.randomvariates.DefaulRandomParameterProvider>
-                        <value>100.0</value>
-                      </org.modcs.tools.spn.simulator.randomvariates.DefaulRandomParameterProvider>
+                      <org.modcs.tools.spn.gui.IRandomParameterProviderImpl>
+                        <ifelse>
+                          <stringCondition>STDFILAE</stringCondition>
+                          <singleExpression>
+                            <realValue>
+                              <realParameter>
+                                <identifier>
+                                  <identifier>STDFILAE</identifier>
+                                  <showedMessage>false</showedMessage>
+                                </identifier>
+                              </realParameter>
+                            </realValue>
+                          </singleExpression>
+                        </ifelse>
+                      </org.modcs.tools.spn.gui.IRandomParameterProviderImpl>
                     </entry>
                   </map>
                   <constructorDistributionOrder>
@@ -1121,629 +1133,629 @@
                       <index>0</index>
                       <v>
                         <int>409</int>
-                        <int>1968323167</int>
+                        <int>1857980935</int>
                         <int>-1744141729</int>
-                        <int>-1958783719</int>
+                        <int>-147608991</int>
                         <int>-1082345079</int>
-                        <int>1271532584</int>
+                        <int>-775858853</int>
                         <int>-708740103</int>
-                        <int>-1470644940</int>
+                        <int>-1568205125</int>
                         <int>1132153958</int>
-                        <int>-1398377541</int>
+                        <int>309130562</int>
                         <int>643384237</int>
-                        <int>-1069005756</int>
+                        <int>554374421</int>
                         <int>-1138079667</int>
-                        <int>2098275284</int>
+                        <int>1731890774</int>
                         <int>-1400552275</int>
-                        <int>1522737176</int>
+                        <int>-1465403550</int>
                         <int>-1057991985</int>
-                        <int>-1479013650</int>
+                        <int>-2131484259</int>
                         <int>1093534722</int>
-                        <int>-1655095453</int>
+                        <int>1382463522</int>
                         <int>-1218301885</int>
-                        <int>-1456930042</int>
+                        <int>1208377572</int>
                         <int>-2070275417</int>
-                        <int>-621115921</int>
+                        <int>379701104</int>
                         <int>140451125</int>
-                        <int>-1611941783</int>
+                        <int>899587913</int>
                         <int>1553654531</int>
-                        <int>1802571182</int>
+                        <int>835840232</int>
                         <int>2040898022</int>
-                        <int>397806888</int>
+                        <int>1003293605</int>
                         <int>-2092007615</int>
-                        <int>66427111</int>
+                        <int>1084482872</int>
                         <int>1227293307</int>
-                        <int>-1593183676</int>
+                        <int>-2031882082</int>
                         <int>1175274564</int>
-                        <int>-58592123</int>
+                        <int>-1209241341</int>
                         <int>-1230513059</int>
-                        <int>-1657482937</int>
+                        <int>-1943548170</int>
                         <int>-666023307</int>
-                        <int>154759204</int>
+                        <int>499163215</int>
                         <int>2070837658</int>
-                        <int>-1582792099</int>
+                        <int>-1997371820</int>
                         <int>-1998131887</int>
-                        <int>1043713146</int>
+                        <int>974322237</int>
                         <int>-1095956937</int>
-                        <int>1694299727</int>
+                        <int>-1525522626</int>
                         <int>-840426117</int>
-                        <int>-608245003</int>
+                        <int>1879518191</int>
                         <int>1832976964</int>
-                        <int>-315250909</int>
+                        <int>-1529302249</int>
                         <int>281006699</int>
-                        <int>-244921601</int>
+                        <int>1695090976</int>
                         <int>674645867</int>
-                        <int>852420917</int>
+                        <int>-564509894</int>
                         <int>26177645</int>
-                        <int>-2099093728</int>
+                        <int>1036773104</int>
                         <int>1874636857</int>
-                        <int>1171867087</int>
+                        <int>278433001</int>
                         <int>-2126021038</int>
-                        <int>-1514813311</int>
+                        <int>1442269480</int>
                         <int>-672910056</int>
-                        <int>1869864024</int>
+                        <int>-1932145046</int>
                         <int>-1294095263</int>
-                        <int>-1945071524</int>
+                        <int>-818297949</int>
                         <int>715396347</int>
-                        <int>1168293163</int>
+                        <int>-888730483</int>
                         <int>416520777</int>
-                        <int>1955994581</int>
+                        <int>-526512579</int>
                         <int>218886161</int>
-                        <int>-2031522071</int>
+                        <int>1079194575</int>
                         <int>1168494587</int>
-                        <int>-2060612262</int>
+                        <int>976137869</int>
                         <int>1586354154</int>
-                        <int>1725759229</int>
+                        <int>833573610</int>
                         <int>1106244353</int>
-                        <int>579433911</int>
+                        <int>1777397917</int>
                         <int>297131852</int>
-                        <int>-1673830272</int>
+                        <int>555117017</int>
                         <int>2085930314</int>
-                        <int>442456837</int>
+                        <int>2104222700</int>
                         <int>1947466215</int>
-                        <int>142054986</int>
+                        <int>1879425490</int>
                         <int>1508355600</int>
-                        <int>-1432230523</int>
+                        <int>-1748737134</int>
                         <int>1661322761</int>
-                        <int>-1482078756</int>
+                        <int>-584154383</int>
                         <int>-226924162</int>
-                        <int>-1295932991</int>
+                        <int>737465565</int>
                         <int>-433362371</int>
-                        <int>29615668</int>
+                        <int>1804419210</int>
                         <int>-447617052</int>
-                        <int>-1008228641</int>
+                        <int>1846663730</int>
                         <int>-1101859325</int>
-                        <int>-1389540867</int>
+                        <int>1983209852</int>
                         <int>-2054662609</int>
-                        <int>-1365349746</int>
+                        <int>-1700373584</int>
                         <int>734910677</int>
-                        <int>-1433868911</int>
+                        <int>1533907239</int>
                         <int>991136107</int>
-                        <int>36427054</int>
+                        <int>-1259234719</int>
                         <int>-1456702821</int>
-                        <int>-1935492725</int>
+                        <int>745090848</int>
                         <int>-1248219585</int>
-                        <int>-1212913264</int>
+                        <int>-1718110201</int>
                         <int>-999978355</int>
-                        <int>2119514063</int>
+                        <int>964142758</int>
                         <int>2062047332</int>
-                        <int>-518110543</int>
+                        <int>1257084393</int>
                         <int>-608441019</int>
-                        <int>310406707</int>
+                        <int>-1370665739</int>
                         <int>-1208554032</int>
-                        <int>-1895185010</int>
+                        <int>1721665222</int>
                         <int>764463766</int>
-                        <int>796589729</int>
+                        <int>-165893132</int>
                         <int>1218720672</int>
-                        <int>1882300152</int>
+                        <int>2130119626</int>
                         <int>-573536263</int>
-                        <int>913701298</int>
+                        <int>1129597580</int>
                         <int>-1272999724</int>
-                        <int>-1962293839</int>
+                        <int>838983448</int>
                         <int>-852535798</int>
-                        <int>-696104796</int>
+                        <int>-188162831</int>
                         <int>-1191564509</int>
-                        <int>221645410</int>
+                        <int>-874163455</int>
                         <int>843202733</int>
-                        <int>-1030845657</int>
+                        <int>-1207161165</int>
                         <int>159062463</int>
-                        <int>1194504631</int>
+                        <int>323930336</int>
                         <int>-426680357</int>
-                        <int>-602635441</int>
+                        <int>-977985311</int>
                         <int>-850103626</int>
-                        <int>-630038029</int>
+                        <int>-758966951</int>
                         <int>1967771473</int>
-                        <int>-54016191</int>
+                        <int>-450532861</int>
                         <int>826317590</int>
-                        <int>280891773</int>
+                        <int>-60487437</int>
                         <int>-2028603850</int>
-                        <int>-2000434214</int>
+                        <int>732750917</int>
                         <int>-1744182158</int>
-                        <int>-542910785</int>
+                        <int>457309380</int>
                         <int>-1985295672</int>
-                        <int>925861581</int>
+                        <int>-1431724575</int>
                         <int>-2054036260</int>
-                        <int>1618928752</int>
+                        <int>-1469035062</int>
                         <int>1340335866</int>
-                        <int>-446195162</int>
+                        <int>1098588949</int>
                         <int>-1335659367</int>
-                        <int>1636847664</int>
+                        <int>551979895</int>
                         <int>1932402487</int>
-                        <int>-1775182614</int>
+                        <int>1608037768</int>
                         <int>-1033881884</int>
-                        <int>-32863365</int>
+                        <int>-1939541852</int>
                         <int>-1234777281</int>
-                        <int>13474989</int>
+                        <int>-86361829</int>
                         <int>-470541889</int>
-                        <int>-1632475684</int>
+                        <int>-543982449</int>
                         <int>-1163257892</int>
-                        <int>2047345159</int>
+                        <int>-1254700083</int>
                         <int>84723720</int>
-                        <int>73925373</int>
+                        <int>532014014</int>
                         <int>-1387318328</int>
-                        <int>932025202</int>
+                        <int>1003849879</int>
                         <int>-1702660112</int>
-                        <int>-824103267</int>
+                        <int>1366864694</int>
                         <int>1330850858</int>
-                        <int>-253489585</int>
+                        <int>-687332264</int>
                         <int>664826013</int>
-                        <int>-970093801</int>
+                        <int>1139214474</int>
                         <int>-824478823</int>
-                        <int>-2098182095</int>
+                        <int>1300611712</int>
                         <int>-782763288</int>
-                        <int>456805462</int>
+                        <int>-396114288</int>
                         <int>715411903</int>
-                        <int>1328817307</int>
+                        <int>1365774456</int>
                         <int>-1832093687</int>
-                        <int>526310257</int>
+                        <int>1311654252</int>
                         <int>-1797729245</int>
-                        <int>-806154938</int>
+                        <int>1597908402</int>
                         <int>-1409772573</int>
-                        <int>-1844460368</int>
+                        <int>1637264210</int>
                         <int>1351888165</int>
-                        <int>1990599803</int>
+                        <int>-714734732</int>
                         <int>-2103831574</int>
-                        <int>812101337</int>
+                        <int>-1028389234</int>
                         <int>-384247652</int>
-                        <int>-378987178</int>
+                        <int>1435362126</int>
                         <int>-1795455543</int>
-                        <int>661839464</int>
+                        <int>986248678</int>
                         <int>699180911</int>
-                        <int>-30447675</int>
+                        <int>2116754043</int>
                         <int>1052866185</int>
-                        <int>-94824031</int>
+                        <int>159562977</int>
                         <int>1417811405</int>
-                        <int>-2135739945</int>
+                        <int>-842011002</int>
                         <int>-1651456450</int>
-                        <int>1119897584</int>
+                        <int>211789440</int>
                         <int>-267810428</int>
-                        <int>-537699366</int>
+                        <int>-124309179</int>
                         <int>1392611917</int>
-                        <int>-2116579232</int>
+                        <int>571546153</int>
                         <int>-1493343036</int>
-                        <int>520198175</int>
+                        <int>-1696709642</int>
                         <int>967788716</int>
-                        <int>1390582790</int>
+                        <int>2015852531</int>
                         <int>482326696</int>
-                        <int>823676560</int>
+                        <int>-429861561</int>
                         <int>-569523434</int>
-                        <int>1183977375</int>
+                        <int>347100007</int>
                         <int>-41305667</int>
-                        <int>390969383</int>
+                        <int>1107560308</int>
                         <int>135334620</int>
-                        <int>1179092790</int>
+                        <int>-1010331908</int>
                         <int>1770849696</int>
-                        <int>-401225592</int>
+                        <int>1372860932</int>
                         <int>806183515</int>
-                        <int>2136445386</int>
+                        <int>1369401808</int>
                         <int>862421439</int>
-                        <int>-1155585808</int>
+                        <int>-1807967922</int>
                         <int>-864131019</int>
-                        <int>1227708257</int>
+                        <int>618378315</int>
                         <int>182582670</int>
-                        <int>105241021</int>
+                        <int>-1338555020</int>
                         <int>314312676</int>
-                        <int>-1958736528</int>
+                        <int>936080209</int>
                         <int>1805918676</int>
-                        <int>1382723815</int>
+                        <int>926013654</int>
                         <int>380589803</int>
-                        <int>2064441761</int>
+                        <int>-1450241199</int>
                         <int>1293815451</int>
-                        <int>473146629</int>
+                        <int>-704640784</int>
                         <int>-522048088</int>
-                        <int>1657981152</int>
+                        <int>-1566801710</int>
                         <int>-1330279365</int>
-                        <int>886090414</int>
+                        <int>562280773</int>
                         <int>1723275939</int>
-                        <int>-1804831343</int>
+                        <int>-469694940</int>
                         <int>-1779682090</int>
-                        <int>55838136</int>
+                        <int>-1202993324</int>
                         <int>-543191114</int>
-                        <int>255703687</int>
+                        <int>18044417</int>
                         <int>1075994301</int>
-                        <int>433968948</int>
+                        <int>-1951500202</int>
                         <int>-1721369314</int>
-                        <int>-1088635785</int>
+                        <int>458976827</int>
                         <int>2053964628</int>
-                        <int>-577964286</int>
+                        <int>-1599270596</int>
                         <int>-1759654273</int>
-                        <int>572322248</int>
+                        <int>1556874625</int>
                         <int>876777949</int>
-                        <int>-280531743</int>
+                        <int>-235950983</int>
                         <int>2002637355</int>
-                        <int>224336337</int>
+                        <int>432909017</int>
                         <int>-995990130</int>
-                        <int>202180978</int>
+                        <int>1988200858</int>
                         <int>1756063891</int>
-                        <int>357612793</int>
+                        <int>989609510</int>
                         <int>2056545434</int>
-                        <int>-724905922</int>
+                        <int>-36643841</int>
                         <int>-358636247</int>
-                        <int>1020338472</int>
+                        <int>316486915</int>
                         <int>-1015390862</int>
-                        <int>-1319600691</int>
+                        <int>-1984330188</int>
                         <int>1385273255</int>
-                        <int>-1071076826</int>
+                        <int>-310302791</int>
                         <int>-1423791226</int>
-                        <int>1372913830</int>
+                        <int>-1615672665</int>
                         <int>-590443422</int>
-                        <int>-1091329554</int>
+                        <int>1366404648</int>
                         <int>-1095982339</int>
-                        <int>-1700287139</int>
+                        <int>120367162</int>
                         <int>834620989</int>
-                        <int>1183241822</int>
+                        <int>-868521487</int>
                         <int>-519863263</int>
-                        <int>-326866036</int>
+                        <int>-1556172137</int>
                         <int>1660464552</int>
-                        <int>1700273522</int>
+                        <int>1955576960</int>
                         <int>749401537</int>
-                        <int>1974151796</int>
+                        <int>2082302202</int>
                         <int>1094598459</int>
-                        <int>-1955373504</int>
+                        <int>2007351070</int>
                         <int>1073413370</int>
-                        <int>-767787249</int>
+                        <int>897908564</int>
                         <int>-230843972</int>
-                        <int>1957842891</int>
+                        <int>-1251430081</int>
                         <int>-2042547061</int>
-                        <int>-577595953</int>
+                        <int>-98673598</int>
                         <int>257614663</int>
-                        <int>1246664207</int>
+                        <int>1221640112</int>
                         <int>-580015325</int>
-                        <int>1638970023</int>
+                        <int>1523079926</int>
                         <int>355022830</int>
-                        <int>81482401</int>
+                        <int>-1166339178</int>
                         <int>1471377418</int>
-                        <int>2015806378</int>
+                        <int>-422777299</int>
                         <int>1426987133</int>
-                        <int>-1548831074</int>
+                        <int>1517120257</int>
                         <int>353240596</int>
-                        <int>1844859913</int>
+                        <int>678311977</int>
                         <int>1783962382</int>
-                        <int>-513839021</int>
+                        <int>-995550632</int>
                         <int>-1871203049</int>
-                        <int>2146417673</int>
+                        <int>-1514145008</int>
                         <int>1228619803</int>
-                        <int>1231910999</int>
+                        <int>1751601429</int>
                         <int>1382298994</int>
-                        <int>535855391</int>
+                        <int>582136341</int>
                         <int>474522257</int>
-                        <int>-355104402</int>
+                        <int>207650940</int>
                         <int>-1516323479</int>
-                        <int>2099994986</int>
+                        <int>1513688609</int>
                         <int>992155081</int>
-                        <int>1730982766</int>
+                        <int>66171863</int>
                         <int>2147428997</int>
-                        <int>1555182340</int>
+                        <int>-2038758388</int>
                         <int>-418878642</int>
-                        <int>1891553076</int>
+                        <int>401205685</int>
                         <int>353854481</int>
-                        <int>-1633804762</int>
+                        <int>1565397670</int>
                         <int>-1086417677</int>
-                        <int>442676087</int>
+                        <int>-1906721758</int>
                         <int>2012492385</int>
-                        <int>1463582260</int>
+                        <int>2079163149</int>
                         <int>-487767774</int>
-                        <int>-1713690324</int>
+                        <int>-1523965697</int>
                         <int>-191589515</int>
-                        <int>2067604511</int>
+                        <int>-809531990</int>
                         <int>775794104</int>
-                        <int>-62566627</int>
+                        <int>-1086668336</int>
                         <int>-1605041440</int>
-                        <int>-1887519629</int>
+                        <int>928655215</int>
                         <int>-742593504</int>
-                        <int>-452911892</int>
+                        <int>-38471914</int>
                         <int>-80597177</int>
-                        <int>1201259212</int>
+                        <int>-1715587526</int>
                         <int>1592644070</int>
-                        <int>1485082928</int>
+                        <int>-1052082269</int>
                         <int>-361140109</int>
-                        <int>-2108194138</int>
+                        <int>835772829</int>
                         <int>2109509518</int>
-                        <int>1274383627</int>
+                        <int>-680457916</int>
                         <int>-987681857</int>
-                        <int>1939931207</int>
+                        <int>630090780</int>
                         <int>1195376278</int>
-                        <int>1368691445</int>
+                        <int>-842029981</int>
                         <int>94323179</int>
-                        <int>-1494315107</int>
+                        <int>-10575387</int>
                         <int>1669907985</int>
-                        <int>1337676650</int>
+                        <int>633080733</int>
                         <int>-1587235412</int>
-                        <int>544812436</int>
+                        <int>313695054</int>
                         <int>239613368</int>
-                        <int>1480536259</int>
+                        <int>481690917</int>
                         <int>1598335736</int>
-                        <int>-816574485</int>
+                        <int>2090063354</int>
                         <int>241546911</int>
-                        <int>937192775</int>
+                        <int>28557418</int>
                         <int>792012063</int>
-                        <int>-245162648</int>
+                        <int>-657873609</int>
                         <int>682507681</int>
-                        <int>-1622592006</int>
+                        <int>1786698319</int>
                         <int>-417301779</int>
-                        <int>810932477</int>
+                        <int>-956178385</int>
                         <int>-1444666492</int>
-                        <int>-1377238468</int>
+                        <int>435740283</int>
                         <int>1632716686</int>
-                        <int>2032988407</int>
+                        <int>1738316532</int>
                         <int>759546841</int>
-                        <int>979941501</int>
+                        <int>1214857496</int>
                         <int>423913229</int>
-                        <int>-579424318</int>
+                        <int>957092174</int>
                         <int>-528638317</int>
-                        <int>164122244</int>
+                        <int>1478988601</int>
                         <int>1854356752</int>
-                        <int>-475553911</int>
+                        <int>-1678897523</int>
                         <int>-763350485</int>
-                        <int>-440977915</int>
+                        <int>862965462</int>
                         <int>1767811612</int>
-                        <int>1352956699</int>
+                        <int>279388647</int>
                         <int>506307563</int>
-                        <int>746290365</int>
+                        <int>1684406430</int>
                         <int>-198741965</int>
-                        <int>-945529586</int>
+                        <int>1257002808</int>
                         <int>-1879512838</int>
-                        <int>1727087508</int>
+                        <int>2021321724</int>
                         <int>1329150484</int>
-                        <int>1869441098</int>
+                        <int>-2135654062</int>
                         <int>1413228747</int>
-                        <int>17254938</int>
+                        <int>-1505294497</int>
                         <int>-1021955274</int>
-                        <int>1295919047</int>
+                        <int>460276234</int>
                         <int>-1940628013</int>
-                        <int>1530439845</int>
+                        <int>1669491065</int>
                         <int>-407104951</int>
-                        <int>471223869</int>
+                        <int>-1892887071</int>
                         <int>889008216</int>
-                        <int>-464092004</int>
+                        <int>-1078774074</int>
                         <int>-651482044</int>
-                        <int>-1063605604</int>
+                        <int>-1769841499</int>
                         <int>-446456491</int>
-                        <int>1466018974</int>
+                        <int>-1233508490</int>
                         <int>-1692014430</int>
-                        <int>-1958530228</int>
+                        <int>-295225543</int>
                         <int>-200313634</int>
-                        <int>-924449331</int>
+                        <int>-1172099663</int>
                         <int>709004953</int>
-                        <int>-1820165809</int>
+                        <int>-791395904</int>
                         <int>-1128192781</int>
-                        <int>1433525868</int>
+                        <int>-859125902</int>
                         <int>-1537121607</int>
-                        <int>-1225779302</int>
+                        <int>-1222785478</int>
                         <int>1219497373</int>
-                        <int>-513788657</int>
+                        <int>377925615</int>
                         <int>335666216</int>
-                        <int>1698005581</int>
+                        <int>-1697426968</int>
                         <int>-928692890</int>
-                        <int>820712859</int>
+                        <int>-563841459</int>
                         <int>181829885</int>
-                        <int>378305224</int>
+                        <int>1525389019</int>
                         <int>1418938995</int>
-                        <int>-828802421</int>
+                        <int>178466725</int>
                         <int>1376871070</int>
-                        <int>-251020183</int>
+                        <int>1885608638</int>
                         <int>1962672481</int>
-                        <int>-764546603</int>
+                        <int>956810754</int>
                         <int>-1916212088</int>
-                        <int>1062867515</int>
+                        <int>-350866829</int>
                         <int>-648096456</int>
-                        <int>-1779972622</int>
+                        <int>236062183</int>
                         <int>-1662295761</int>
-                        <int>2029212777</int>
+                        <int>-812256048</int>
                         <int>-1546157277</int>
-                        <int>520353463</int>
+                        <int>-65301958</int>
                         <int>-1395226143</int>
-                        <int>1318668004</int>
+                        <int>-465519254</int>
                         <int>1315648237</int>
-                        <int>-1783855348</int>
+                        <int>-81132676</int>
                         <int>1124033744</int>
-                        <int>88488751</int>
+                        <int>-1742488476</int>
                         <int>158179627</int>
-                        <int>480936514</int>
+                        <int>-1421207687</int>
                         <int>-273835345</int>
-                        <int>-154617917</int>
+                        <int>350617084</int>
                         <int>233425482</int>
-                        <int>-2112119449</int>
+                        <int>-1785916889</int>
                         <int>1518627566</int>
-                        <int>571328794</int>
+                        <int>-1919944358</int>
                         <int>1409358089</int>
-                        <int>1204110081</int>
+                        <int>2017223795</int>
                         <int>-905172504</int>
-                        <int>-1230081855</int>
+                        <int>-1733122885</int>
                         <int>1432799189</int>
-                        <int>294599838</int>
+                        <int>-1035996932</int>
                         <int>-1723249560</int>
-                        <int>-448431589</int>
+                        <int>-773617420</int>
                         <int>2102010356</int>
-                        <int>913955003</int>
+                        <int>1379720222</int>
                         <int>1679721585</int>
-                        <int>-2077518192</int>
+                        <int>480801028</int>
                         <int>-1275448838</int>
-                        <int>-784631759</int>
+                        <int>973847647</int>
                         <int>1806069088</int>
-                        <int>1054397459</int>
+                        <int>1762208328</int>
                         <int>1926828563</int>
-                        <int>-1517365170</int>
+                        <int>1279115676</int>
                         <int>-1865562902</int>
-                        <int>-1833838015</int>
+                        <int>-1471845950</int>
                         <int>-839187274</int>
-                        <int>-1908335314</int>
+                        <int>-492346497</int>
                         <int>292566689</int>
-                        <int>-77541915</int>
+                        <int>1194737749</int>
                         <int>1491646555</int>
-                        <int>1532276761</int>
+                        <int>1394628347</int>
                         <int>-1594955942</int>
-                        <int>1263424337</int>
+                        <int>-215737221</int>
                         <int>-2073395570</int>
-                        <int>-1481854869</int>
+                        <int>-1474402065</int>
                         <int>-1907293428</int>
-                        <int>2005410982</int>
+                        <int>-1286622062</int>
                         <int>-2113581224</int>
-                        <int>2028263106</int>
+                        <int>970887035</int>
                         <int>-1191540386</int>
-                        <int>1284249552</int>
+                        <int>-1074499480</int>
                         <int>-1341952254</int>
-                        <int>-21282728</int>
+                        <int>-1451168239</int>
                         <int>-14675632</int>
-                        <int>-62849592</int>
+                        <int>1917058096</int>
                         <int>-1981950991</int>
-                        <int>-166965094</int>
+                        <int>136297020</int>
                         <int>1836608211</int>
-                        <int>-1111211582</int>
+                        <int>-1764583531</int>
                         <int>627738820</int>
-                        <int>-1643893865</int>
+                        <int>-893880542</int>
                         <int>865393472</int>
-                        <int>-2014969766</int>
+                        <int>1199719966</int>
                         <int>30392878</int>
-                        <int>2039259555</int>
+                        <int>-322616534</int>
                         <int>-1658569706</int>
-                        <int>-93751077</int>
+                        <int>185433850</int>
                         <int>-672959366</int>
-                        <int>-1531865305</int>
+                        <int>-2044926827</int>
                         <int>110115437</int>
-                        <int>1710915730</int>
+                        <int>-2077026772</int>
                         <int>1529242615</int>
-                        <int>-760715530</int>
+                        <int>2109187025</int>
                         <int>90052614</int>
-                        <int>-1078709370</int>
+                        <int>449704713</int>
                         <int>-1457212840</int>
-                        <int>630973779</int>
+                        <int>999273864</int>
                         <int>-929203590</int>
-                        <int>-1920997700</int>
+                        <int>-1097832283</int>
                         <int>1442176119</int>
-                        <int>1121733385</int>
+                        <int>277048294</int>
                         <int>1278550670</int>
-                        <int>-1303845847</int>
+                        <int>-740185665</int>
                         <int>-966907027</int>
-                        <int>503647446</int>
+                        <int>-2078397</int>
                         <int>-1080491618</int>
-                        <int>766941299</int>
+                        <int>1416738353</int>
                         <int>-77349402</int>
-                        <int>1875161702</int>
+                        <int>1722585847</int>
                         <int>-877365531</int>
-                        <int>-1327201364</int>
+                        <int>-1451908329</int>
                         <int>-975043764</int>
-                        <int>-375525275</int>
+                        <int>112089848</int>
                         <int>1727365035</int>
-                        <int>-1270901809</int>
+                        <int>239115749</int>
                         <int>903043616</int>
-                        <int>2116545124</int>
+                        <int>557898344</int>
                         <int>1316860080</int>
-                        <int>653428970</int>
+                        <int>-1404054247</int>
                         <int>-1141083929</int>
-                        <int>-1621409691</int>
+                        <int>-339243466</int>
                         <int>850057201</int>
-                        <int>-322532036</int>
+                        <int>396916578</int>
                         <int>-24236757</int>
-                        <int>-1150704634</int>
+                        <int>419990977</int>
                         <int>-1350065220</int>
-                        <int>-1437465871</int>
+                        <int>-1065142210</int>
                         <int>-2035697116</int>
-                        <int>695918598</int>
+                        <int>-1251468736</int>
                         <int>-345949410</int>
-                        <int>-947414405</int>
+                        <int>672289811</int>
                         <int>1747392483</int>
-                        <int>745517875</int>
+                        <int>-289515362</int>
                         <int>40001610</int>
-                        <int>-1185087424</int>
+                        <int>1897985126</int>
                         <int>1885182292</int>
-                        <int>1063097881</int>
+                        <int>1738313158</int>
                         <int>2035219885</int>
-                        <int>-1141990654</int>
+                        <int>2098491560</int>
                         <int>-1583406334</int>
-                        <int>1019983251</int>
+                        <int>-1443240492</int>
                         <int>1834880404</int>
-                        <int>-74493912</int>
+                        <int>-1550922053</int>
                         <int>-1233970445</int>
-                        <int>-1854902018</int>
+                        <int>-2132189340</int>
                         <int>713381197</int>
-                        <int>1529507117</int>
+                        <int>-1676293905</int>
                         <int>-228860273</int>
-                        <int>945660043</int>
+                        <int>1884738788</int>
                         <int>1639326560</int>
-                        <int>1604828168</int>
+                        <int>947096970</int>
                         <int>-378412937</int>
-                        <int>1896678080</int>
+                        <int>857453477</int>
                         <int>833239772</int>
-                        <int>266494298</int>
+                        <int>-2104217778</int>
                         <int>497874690</int>
-                        <int>199201977</int>
+                        <int>587696039</int>
                         <int>-562329598</int>
-                        <int>1927000118</int>
+                        <int>52553244</int>
                         <int>560250379</int>
-                        <int>-411371794</int>
+                        <int>2068367175</int>
                         <int>-322969709</int>
-                        <int>1238216434</int>
+                        <int>-1857743141</int>
                         <int>1553635546</int>
-                        <int>2104169246</int>
+                        <int>-1299854632</int>
                         <int>-691502169</int>
-                        <int>1649615996</int>
+                        <int>1941065791</int>
                         <int>2060921082</int>
-                        <int>79645844</int>
+                        <int>1811732665</int>
                         <int>-1632731061</int>
-                        <int>-947884887</int>
+                        <int>2009332445</int>
                         <int>-596491857</int>
-                        <int>-544724683</int>
+                        <int>-845826285</int>
                         <int>-705370152</int>
-                        <int>146790907</int>
+                        <int>1399395173</int>
                         <int>-1554093907</int>
-                        <int>-113945262</int>
+                        <int>-611242817</int>
                         <int>755048715</int>
-                        <int>-905515634</int>
+                        <int>1971755661</int>
                         <int>-412225883</int>
-                        <int>-1019624988</int>
+                        <int>-1331435637</int>
                         <int>1314915538</int>
-                        <int>674231800</int>
+                        <int>-1616951942</int>
                         <int>1950078097</int>
-                        <int>-548027093</int>
+                        <int>-1818870681</int>
                         <int>1884024612</int>
-                        <int>141601785</int>
+                        <int>1150684850</int>
                         <int>385034479</int>
-                        <int>1615535252</int>
+                        <int>1207343606</int>
                         <int>559943587</int>
-                        <int>-738130398</int>
+                        <int>-965677108</int>
                         <int>-994482007</int>
-                        <int>-530916468</int>
+                        <int>981578106</int>
                         <int>-1791967926</int>
-                        <int>1607331516</int>
+                        <int>-814001793</int>
                         <int>-781998238</int>
-                        <int>1143822320</int>
+                        <int>-348431649</int>
                         <int>-1218052783</int>
-                        <int>1032498550</int>
+                        <int>1909671937</int>
                         <int>-151275411</int>
-                        <int>79992817</int>
+                        <int>-236754333</int>
                         <int>1710973182</int>
-                        <int>-361304710</int>
+                        <int>-996440847</int>
                         <int>-32588287</int>
-                        <int>2007006688</int>
+                        <int>2044792045</int>
                         <int>-697173602</int>
-                        <int>1926632750</int>
+                        <int>1881696133</int>
                         <int>2132373423</int>
-                        <int>1209369846</int>
+                        <int>1676836223</int>
                         <int>932130834</int>
-                        <int>-882465056</int>
+                        <int>-901385437</int>
                         <int>1958058888</int>
-                        <int>1426768554</int>
+                        <int>-313732805</int>
                       </v>
                       <iRm1>
                         <int>623</int>
@@ -4948,9 +4960,21 @@
                     </entry>
                     <entry>
                       <string>Standard Deviation</string>
-                      <org.modcs.tools.spn.simulator.randomvariates.DefaulRandomParameterProvider>
-                        <value>400.0</value>
-                      </org.modcs.tools.spn.simulator.randomvariates.DefaulRandomParameterProvider>
+                      <org.modcs.tools.spn.gui.IRandomParameterProviderImpl>
+                        <ifelse>
+                          <stringCondition>STDFILAF</stringCondition>
+                          <singleExpression>
+                            <realValue>
+                              <realParameter>
+                                <identifier>
+                                  <identifier>STDFILAF</identifier>
+                                  <showedMessage>false</showedMessage>
+                                </identifier>
+                              </realParameter>
+                            </realValue>
+                          </singleExpression>
+                        </ifelse>
+                      </org.modcs.tools.spn.gui.IRandomParameterProviderImpl>
                     </entry>
                   </map>
                   <constructorDistributionOrder>
@@ -4973,629 +4997,629 @@
                       <index>0</index>
                       <v>
                         <int>409</int>
-                        <int>696519757</int>
+                        <int>1713061793</int>
                         <int>-1744141729</int>
-                        <int>-574025884</int>
+                        <int>455916067</int>
                         <int>-1082345079</int>
-                        <int>-559095764</int>
+                        <int>-2093536556</int>
                         <int>-708740103</int>
-                        <int>-2070382266</int>
+                        <int>1098224537</int>
                         <int>1132153958</int>
-                        <int>1710792353</int>
+                        <int>-393768191</int>
                         <int>643384237</int>
-                        <int>509228331</int>
+                        <int>-674697663</int>
                         <int>-1138079667</int>
-                        <int>-667419388</int>
+                        <int>-93671933</int>
                         <int>-1400552275</int>
-                        <int>-1268875242</int>
+                        <int>-1431489413</int>
                         <int>-1057991985</int>
-                        <int>-1551720807</int>
+                        <int>-1523091318</int>
                         <int>1093534722</int>
-                        <int>-1268216650</int>
+                        <int>-976845609</int>
                         <int>-1218301885</int>
-                        <int>1718223741</int>
+                        <int>-106037539</int>
                         <int>-2070275417</int>
-                        <int>-1944798205</int>
+                        <int>-1058823039</int>
                         <int>140451125</int>
-                        <int>991901674</int>
+                        <int>-1147631921</int>
                         <int>1553654531</int>
-                        <int>1201883501</int>
+                        <int>1493502320</int>
                         <int>2040898022</int>
-                        <int>933938105</int>
+                        <int>-1088343374</int>
                         <int>-2092007615</int>
-                        <int>-1087620836</int>
+                        <int>-2133284069</int>
                         <int>1227293307</int>
-                        <int>-1322620597</int>
+                        <int>624298874</int>
                         <int>1175274564</int>
-                        <int>-488746356</int>
+                        <int>1657590085</int>
                         <int>-1230513059</int>
-                        <int>-968820348</int>
+                        <int>-5770247</int>
                         <int>-666023307</int>
-                        <int>338846126</int>
+                        <int>492172421</int>
                         <int>2070837658</int>
-                        <int>32024527</int>
+                        <int>1583850914</int>
                         <int>-1998131887</int>
-                        <int>759233494</int>
+                        <int>33395834</int>
                         <int>-1095956937</int>
-                        <int>-868032101</int>
+                        <int>81190479</int>
                         <int>-840426117</int>
-                        <int>-1550024285</int>
+                        <int>1306983514</int>
                         <int>1832976964</int>
-                        <int>1651220450</int>
+                        <int>-1549057256</int>
                         <int>281006699</int>
-                        <int>-1875144766</int>
+                        <int>-120611599</int>
                         <int>674645867</int>
-                        <int>-1707842591</int>
+                        <int>1484493499</int>
                         <int>26177645</int>
-                        <int>2025467762</int>
+                        <int>-2057540199</int>
                         <int>1874636857</int>
-                        <int>352207768</int>
+                        <int>1622335964</int>
                         <int>-2126021038</int>
-                        <int>1403323187</int>
+                        <int>1249730924</int>
                         <int>-672910056</int>
-                        <int>2100167927</int>
+                        <int>580240702</int>
                         <int>-1294095263</int>
-                        <int>-292971699</int>
+                        <int>1482096565</int>
                         <int>715396347</int>
-                        <int>410451067</int>
+                        <int>1461073477</int>
                         <int>416520777</int>
-                        <int>527200202</int>
+                        <int>1789512983</int>
                         <int>218886161</int>
-                        <int>-1272892169</int>
+                        <int>-682053645</int>
                         <int>1168494587</int>
-                        <int>-2100499500</int>
+                        <int>-735248125</int>
                         <int>1586354154</int>
-                        <int>1535707</int>
+                        <int>2107078069</int>
                         <int>1106244353</int>
-                        <int>-7409742</int>
+                        <int>-1028996017</int>
                         <int>297131852</int>
-                        <int>-1670405202</int>
+                        <int>-1318994755</int>
                         <int>2085930314</int>
-                        <int>-812958753</int>
+                        <int>-784046914</int>
                         <int>1947466215</int>
-                        <int>2011594993</int>
+                        <int>-2132735498</int>
                         <int>1508355600</int>
-                        <int>1870745347</int>
+                        <int>-753313413</int>
                         <int>1661322761</int>
-                        <int>844774943</int>
+                        <int>1673025129</int>
                         <int>-226924162</int>
-                        <int>-273540718</int>
+                        <int>986693471</int>
                         <int>-433362371</int>
-                        <int>1745305178</int>
+                        <int>-1325836332</int>
                         <int>-447617052</int>
-                        <int>62344514</int>
+                        <int>247780077</int>
                         <int>-1101859325</int>
-                        <int>-2072523417</int>
+                        <int>-385676066</int>
                         <int>-2054662609</int>
-                        <int>-1912678468</int>
+                        <int>30381412</int>
                         <int>734910677</int>
-                        <int>-1966197653</int>
+                        <int>328496341</int>
                         <int>991136107</int>
-                        <int>1336610604</int>
+                        <int>971707756</int>
                         <int>-1456702821</int>
-                        <int>1607930406</int>
+                        <int>-836091903</int>
                         <int>-1248219585</int>
-                        <int>-610137910</int>
+                        <int>1963306397</int>
                         <int>-999978355</int>
-                        <int>-1060051630</int>
+                        <int>-999687435</int>
                         <int>2062047332</int>
-                        <int>-644408404</int>
+                        <int>640178013</int>
                         <int>-608441019</int>
-                        <int>-1948811220</int>
+                        <int>1144405278</int>
                         <int>-1208554032</int>
-                        <int>-1759522743</int>
+                        <int>-1342917462</int>
                         <int>764463766</int>
-                        <int>-604192092</int>
+                        <int>521186453</int>
                         <int>1218720672</int>
-                        <int>43640922</int>
+                        <int>-1040001988</int>
                         <int>-573536263</int>
-                        <int>-1232677385</int>
+                        <int>1738710884</int>
                         <int>-1272999724</int>
-                        <int>-963942652</int>
+                        <int>-499584944</int>
                         <int>-852535798</int>
-                        <int>599502464</int>
+                        <int>-2001283196</int>
                         <int>-1191564509</int>
-                        <int>1324243195</int>
+                        <int>-908311907</int>
                         <int>843202733</int>
-                        <int>-1736645345</int>
+                        <int>35727911</int>
                         <int>159062463</int>
-                        <int>-1472003004</int>
+                        <int>833978594</int>
                         <int>-426680357</int>
-                        <int>442227427</int>
+                        <int>-1664955477</int>
                         <int>-850103626</int>
-                        <int>1318442770</int>
+                        <int>846865164</int>
                         <int>1967771473</int>
-                        <int>381421060</int>
+                        <int>1279606849</int>
                         <int>826317590</int>
-                        <int>1904378907</int>
+                        <int>-395011641</int>
                         <int>-2028603850</int>
-                        <int>904267979</int>
+                        <int>1329286305</int>
                         <int>-1744182158</int>
-                        <int>1073945506</int>
+                        <int>-1765352533</int>
                         <int>-1985295672</int>
-                        <int>1886986972</int>
+                        <int>-229649642</int>
                         <int>-2054036260</int>
-                        <int>1669203648</int>
+                        <int>887712124</int>
                         <int>1340335866</int>
-                        <int>1302131638</int>
+                        <int>-68289923</int>
                         <int>-1335659367</int>
-                        <int>2069501638</int>
+                        <int>1050459869</int>
                         <int>1932402487</int>
-                        <int>1949072408</int>
+                        <int>168202950</int>
                         <int>-1033881884</int>
-                        <int>-1801103500</int>
+                        <int>76406453</int>
                         <int>-1234777281</int>
-                        <int>-1296279285</int>
+                        <int>723172098</int>
                         <int>-470541889</int>
-                        <int>-1665336252</int>
+                        <int>1152244325</int>
                         <int>-1163257892</int>
-                        <int>-1736113409</int>
+                        <int>1261612561</int>
                         <int>84723720</int>
-                        <int>-68003068</int>
+                        <int>1284848879</int>
                         <int>-1387318328</int>
-                        <int>1300851368</int>
+                        <int>654207111</int>
                         <int>-1702660112</int>
-                        <int>1474987600</int>
+                        <int>1476426982</int>
                         <int>1330850858</int>
-                        <int>161437594</int>
+                        <int>-648419640</int>
                         <int>664826013</int>
-                        <int>1861548649</int>
+                        <int>126313050</int>
                         <int>-824478823</int>
-                        <int>-1719635023</int>
+                        <int>344061995</int>
                         <int>-782763288</int>
-                        <int>-594435370</int>
+                        <int>-1841107806</int>
                         <int>715411903</int>
-                        <int>-494619942</int>
+                        <int>-763830279</int>
                         <int>-1832093687</int>
-                        <int>1441873224</int>
+                        <int>-1365452531</int>
                         <int>-1797729245</int>
-                        <int>2063089534</int>
+                        <int>-1063556720</int>
                         <int>-1409772573</int>
-                        <int>-1369111346</int>
+                        <int>-935739010</int>
                         <int>1351888165</int>
-                        <int>1088539301</int>
+                        <int>976269978</int>
                         <int>-2103831574</int>
-                        <int>688043883</int>
+                        <int>-553590407</int>
                         <int>-384247652</int>
-                        <int>-903372560</int>
+                        <int>-374947433</int>
                         <int>-1795455543</int>
-                        <int>-156923738</int>
+                        <int>678643651</int>
                         <int>699180911</int>
-                        <int>-369182758</int>
+                        <int>-516445268</int>
                         <int>1052866185</int>
-                        <int>-215989160</int>
+                        <int>-1402032002</int>
                         <int>1417811405</int>
-                        <int>1698850980</int>
+                        <int>-396370367</int>
                         <int>-1651456450</int>
-                        <int>-172583204</int>
+                        <int>409861817</int>
                         <int>-267810428</int>
-                        <int>-64014700</int>
+                        <int>-2084208446</int>
                         <int>1392611917</int>
-                        <int>-485049602</int>
+                        <int>466571123</int>
                         <int>-1493343036</int>
-                        <int>-1929592018</int>
+                        <int>-1703680984</int>
                         <int>967788716</int>
-                        <int>-2055057701</int>
+                        <int>369525305</int>
                         <int>482326696</int>
-                        <int>191279462</int>
+                        <int>-942611894</int>
                         <int>-569523434</int>
-                        <int>1446876173</int>
+                        <int>-1922066888</int>
                         <int>-41305667</int>
-                        <int>383374733</int>
+                        <int>-402738705</int>
                         <int>135334620</int>
-                        <int>-367741324</int>
+                        <int>230317347</int>
                         <int>1770849696</int>
-                        <int>922511276</int>
+                        <int>1985182372</int>
                         <int>806183515</int>
-                        <int>717484979</int>
+                        <int>1377087728</int>
                         <int>862421439</int>
-                        <int>-358682248</int>
+                        <int>-143537938</int>
                         <int>-864131019</int>
-                        <int>-1178469602</int>
+                        <int>688575376</int>
                         <int>182582670</int>
-                        <int>-1993093827</int>
+                        <int>-2056419155</int>
                         <int>314312676</int>
-                        <int>-854629682</int>
+                        <int>82411422</int>
                         <int>1805918676</int>
-                        <int>-714850762</int>
+                        <int>180152375</int>
                         <int>380589803</int>
-                        <int>1118242352</int>
+                        <int>-498201194</int>
                         <int>1293815451</int>
-                        <int>-2054378694</int>
+                        <int>-556935854</int>
                         <int>-522048088</int>
-                        <int>154752571</int>
+                        <int>408710184</int>
                         <int>-1330279365</int>
-                        <int>-1839097552</int>
+                        <int>-412085071</int>
                         <int>1723275939</int>
-                        <int>-1138438607</int>
+                        <int>215389361</int>
                         <int>-1779682090</int>
-                        <int>-1010078056</int>
+                        <int>-1559075902</int>
                         <int>-543191114</int>
-                        <int>1348369810</int>
+                        <int>1744748699</int>
                         <int>1075994301</int>
-                        <int>-1182779664</int>
+                        <int>-1731565645</int>
                         <int>-1721369314</int>
-                        <int>-1704668807</int>
+                        <int>213994580</int>
                         <int>2053964628</int>
-                        <int>1540397880</int>
+                        <int>6820377</int>
                         <int>-1759654273</int>
-                        <int>653115252</int>
+                        <int>-445807148</int>
                         <int>876777949</int>
-                        <int>-1016226371</int>
+                        <int>1515730672</int>
                         <int>2002637355</int>
-                        <int>-1004267771</int>
+                        <int>114009872</int>
                         <int>-995990130</int>
-                        <int>608613791</int>
+                        <int>-63931827</int>
                         <int>1756063891</int>
-                        <int>846249914</int>
+                        <int>1330250297</int>
                         <int>2056545434</int>
-                        <int>-215208093</int>
+                        <int>-1830102759</int>
                         <int>-358636247</int>
-                        <int>-294073713</int>
+                        <int>-545588954</int>
                         <int>-1015390862</int>
-                        <int>-67041739</int>
+                        <int>-1055599198</int>
                         <int>1385273255</int>
-                        <int>332113849</int>
+                        <int>285113528</int>
                         <int>-1423791226</int>
-                        <int>1848258054</int>
+                        <int>-298996319</int>
                         <int>-590443422</int>
-                        <int>1064757454</int>
+                        <int>2124467745</int>
                         <int>-1095982339</int>
-                        <int>-232646573</int>
+                        <int>648049581</int>
                         <int>834620989</int>
-                        <int>523989995</int>
+                        <int>1089485136</int>
                         <int>-519863263</int>
-                        <int>1927970760</int>
+                        <int>-357959930</int>
                         <int>1660464552</int>
-                        <int>526777440</int>
+                        <int>-1064448944</int>
                         <int>749401537</int>
-                        <int>1575744245</int>
+                        <int>1669336096</int>
                         <int>1094598459</int>
-                        <int>-406360229</int>
+                        <int>149517084</int>
                         <int>1073413370</int>
-                        <int>-130755123</int>
+                        <int>1752721189</int>
                         <int>-230843972</int>
-                        <int>203057365</int>
+                        <int>-1464928689</int>
                         <int>-2042547061</int>
-                        <int>-1571268058</int>
+                        <int>-1056994062</int>
                         <int>257614663</int>
-                        <int>1405945687</int>
+                        <int>-1172678080</int>
                         <int>-580015325</int>
-                        <int>1143663631</int>
+                        <int>696193815</int>
                         <int>355022830</int>
-                        <int>967090345</int>
+                        <int>-1711613898</int>
                         <int>1471377418</int>
-                        <int>-2004036398</int>
+                        <int>2026552077</int>
                         <int>1426987133</int>
-                        <int>-2134993533</int>
+                        <int>1399404771</int>
                         <int>353240596</int>
-                        <int>-600381062</int>
+                        <int>505570387</int>
                         <int>1783962382</int>
-                        <int>1963331748</int>
+                        <int>226951402</int>
                         <int>-1871203049</int>
-                        <int>2060443462</int>
+                        <int>1411815295</int>
                         <int>1228619803</int>
-                        <int>-1049553102</int>
+                        <int>649999333</int>
                         <int>1382298994</int>
-                        <int>43159314</int>
+                        <int>437454730</int>
                         <int>474522257</int>
-                        <int>-203352755</int>
+                        <int>-447687515</int>
                         <int>-1516323479</int>
-                        <int>-693511313</int>
+                        <int>1824867767</int>
                         <int>992155081</int>
-                        <int>679312903</int>
+                        <int>740091909</int>
                         <int>2147428997</int>
-                        <int>-2010810116</int>
+                        <int>1404385330</int>
                         <int>-418878642</int>
-                        <int>-997894395</int>
+                        <int>251099226</int>
                         <int>353854481</int>
-                        <int>849901023</int>
+                        <int>-1719621953</int>
                         <int>-1086417677</int>
-                        <int>1889786170</int>
+                        <int>1942552804</int>
                         <int>2012492385</int>
-                        <int>-192788344</int>
+                        <int>-502601574</int>
                         <int>-487767774</int>
-                        <int>134812214</int>
+                        <int>989481244</int>
                         <int>-191589515</int>
-                        <int>1305286291</int>
+                        <int>94557521</int>
                         <int>775794104</int>
-                        <int>-1459877151</int>
+                        <int>1587381052</int>
                         <int>-1605041440</int>
-                        <int>982928772</int>
+                        <int>-234132134</int>
                         <int>-742593504</int>
-                        <int>1533295199</int>
+                        <int>41625956</int>
                         <int>-80597177</int>
-                        <int>-229026205</int>
+                        <int>897178049</int>
                         <int>1592644070</int>
-                        <int>113862619</int>
+                        <int>-1360907404</int>
                         <int>-361140109</int>
-                        <int>-1324929608</int>
+                        <int>-1023570493</int>
                         <int>2109509518</int>
-                        <int>-1734578959</int>
+                        <int>-792908033</int>
                         <int>-987681857</int>
-                        <int>1835339072</int>
+                        <int>506820181</int>
                         <int>1195376278</int>
-                        <int>96273660</int>
+                        <int>-1614926368</int>
                         <int>94323179</int>
-                        <int>-568208187</int>
+                        <int>-1707346641</int>
                         <int>1669907985</int>
-                        <int>-396420803</int>
+                        <int>-2015813936</int>
                         <int>-1587235412</int>
-                        <int>-1790517785</int>
+                        <int>-971344253</int>
                         <int>239613368</int>
-                        <int>-1460087236</int>
+                        <int>-1064920245</int>
                         <int>1598335736</int>
-                        <int>662326507</int>
+                        <int>-1296756635</int>
                         <int>241546911</int>
-                        <int>1154948378</int>
+                        <int>-1979220854</int>
                         <int>792012063</int>
-                        <int>1999564812</int>
+                        <int>294711849</int>
                         <int>682507681</int>
-                        <int>810986376</int>
+                        <int>1793490068</int>
                         <int>-417301779</int>
-                        <int>-2068482543</int>
+                        <int>-911350478</int>
                         <int>-1444666492</int>
-                        <int>566383542</int>
+                        <int>-1772664500</int>
                         <int>1632716686</int>
-                        <int>1651600955</int>
+                        <int>271800231</int>
                         <int>759546841</int>
-                        <int>106137681</int>
+                        <int>-1212484270</int>
                         <int>423913229</int>
-                        <int>421470822</int>
+                        <int>1353139021</int>
                         <int>-528638317</int>
-                        <int>-1954862671</int>
+                        <int>1008024175</int>
                         <int>1854356752</int>
-                        <int>1061279136</int>
+                        <int>2108585536</int>
                         <int>-763350485</int>
-                        <int>-2018776681</int>
+                        <int>-1696304612</int>
                         <int>1767811612</int>
-                        <int>1644825062</int>
+                        <int>-604312157</int>
                         <int>506307563</int>
-                        <int>-963409762</int>
+                        <int>1029143495</int>
                         <int>-198741965</int>
-                        <int>-480967742</int>
+                        <int>1530025472</int>
                         <int>-1879512838</int>
-                        <int>1914514064</int>
+                        <int>-1326876444</int>
                         <int>1329150484</int>
-                        <int>-146774602</int>
+                        <int>-337233725</int>
                         <int>1413228747</int>
-                        <int>19394896</int>
+                        <int>2087630895</int>
                         <int>-1021955274</int>
-                        <int>773195285</int>
+                        <int>-914273877</int>
                         <int>-1940628013</int>
-                        <int>-24861488</int>
+                        <int>-1143151445</int>
                         <int>-407104951</int>
-                        <int>-339729900</int>
+                        <int>1187858194</int>
                         <int>889008216</int>
-                        <int>1617056322</int>
+                        <int>-1081395446</int>
                         <int>-651482044</int>
-                        <int>681922812</int>
+                        <int>1548344785</int>
                         <int>-446456491</int>
-                        <int>141807867</int>
+                        <int>-1047997281</int>
                         <int>-1692014430</int>
-                        <int>-345716840</int>
+                        <int>450526833</int>
                         <int>-200313634</int>
-                        <int>826106166</int>
+                        <int>-1493869272</int>
                         <int>709004953</int>
-                        <int>-1229504029</int>
+                        <int>-1909406205</int>
                         <int>-1128192781</int>
-                        <int>1178306568</int>
+                        <int>515196776</int>
                         <int>-1537121607</int>
-                        <int>361266726</int>
+                        <int>-191638111</int>
                         <int>1219497373</int>
-                        <int>90578073</int>
+                        <int>887817905</int>
                         <int>335666216</int>
-                        <int>449194746</int>
+                        <int>-2111480206</int>
                         <int>-928692890</int>
-                        <int>1107607617</int>
+                        <int>579447259</int>
                         <int>181829885</int>
-                        <int>-662562079</int>
+                        <int>1429420040</int>
                         <int>1418938995</int>
-                        <int>-535137159</int>
+                        <int>1517350448</int>
                         <int>1376871070</int>
-                        <int>-974863485</int>
+                        <int>1297953786</int>
                         <int>1962672481</int>
-                        <int>2004957843</int>
+                        <int>-1233922386</int>
                         <int>-1916212088</int>
-                        <int>-2142093501</int>
+                        <int>-409461191</int>
                         <int>-648096456</int>
-                        <int>1557999932</int>
+                        <int>-315028791</int>
                         <int>-1662295761</int>
-                        <int>390665150</int>
+                        <int>1580377595</int>
                         <int>-1546157277</int>
-                        <int>-40404571</int>
+                        <int>1185171281</int>
                         <int>-1395226143</int>
-                        <int>-2020004557</int>
+                        <int>2083124289</int>
                         <int>1315648237</int>
-                        <int>-956571244</int>
+                        <int>503553779</int>
                         <int>1124033744</int>
-                        <int>-1412152084</int>
+                        <int>-1541225836</int>
                         <int>158179627</int>
-                        <int>1373336017</int>
+                        <int>168621705</int>
                         <int>-273835345</int>
-                        <int>-1741932343</int>
+                        <int>1892390598</int>
                         <int>233425482</int>
-                        <int>-223671954</int>
+                        <int>-2022441666</int>
                         <int>1518627566</int>
-                        <int>-1536171534</int>
+                        <int>-1879713923</int>
                         <int>1409358089</int>
-                        <int>574900347</int>
+                        <int>54859886</int>
                         <int>-905172504</int>
-                        <int>-283677368</int>
+                        <int>1465352999</int>
                         <int>1432799189</int>
-                        <int>1497813750</int>
+                        <int>-390064703</int>
                         <int>-1723249560</int>
-                        <int>412642360</int>
+                        <int>-263939525</int>
                         <int>2102010356</int>
-                        <int>-611013665</int>
+                        <int>-155120613</int>
                         <int>1679721585</int>
-                        <int>-1690480023</int>
+                        <int>831995581</int>
                         <int>-1275448838</int>
-                        <int>1658146142</int>
+                        <int>-194386084</int>
                         <int>1806069088</int>
-                        <int>1445486408</int>
+                        <int>1440478492</int>
                         <int>1926828563</int>
-                        <int>-1398116</int>
+                        <int>-2051065024</int>
                         <int>-1865562902</int>
-                        <int>-1932415776</int>
+                        <int>1846103751</int>
                         <int>-839187274</int>
-                        <int>697555625</int>
+                        <int>339610609</int>
                         <int>292566689</int>
-                        <int>-839338110</int>
+                        <int>813019370</int>
                         <int>1491646555</int>
-                        <int>1511358504</int>
+                        <int>-1467873239</int>
                         <int>-1594955942</int>
-                        <int>-651132154</int>
+                        <int>1765136556</int>
                         <int>-2073395570</int>
-                        <int>-796094184</int>
+                        <int>1005458204</int>
                         <int>-1907293428</int>
-                        <int>-80387584</int>
+                        <int>1659602921</int>
                         <int>-2113581224</int>
-                        <int>947310202</int>
+                        <int>-1442854809</int>
                         <int>-1191540386</int>
-                        <int>-122371581</int>
+                        <int>486920766</int>
                         <int>-1341952254</int>
-                        <int>650072655</int>
+                        <int>2021728857</int>
                         <int>-14675632</int>
-                        <int>1085325840</int>
+                        <int>-1229216099</int>
                         <int>-1981950991</int>
-                        <int>-1743869028</int>
+                        <int>-1316863754</int>
                         <int>1836608211</int>
-                        <int>-821248365</int>
+                        <int>-602953711</int>
                         <int>627738820</int>
-                        <int>-672162425</int>
+                        <int>-1671229231</int>
                         <int>865393472</int>
-                        <int>-462351547</int>
+                        <int>-1489795464</int>
                         <int>30392878</int>
-                        <int>1294528849</int>
+                        <int>1348381133</int>
                         <int>-1658569706</int>
-                        <int>-1283783039</int>
+                        <int>315304813</int>
                         <int>-672959366</int>
-                        <int>-1066113010</int>
+                        <int>1348499700</int>
                         <int>110115437</int>
-                        <int>-1711674102</int>
+                        <int>25024414</int>
                         <int>1529242615</int>
-                        <int>-181006277</int>
+                        <int>2086379853</int>
                         <int>90052614</int>
-                        <int>-1856537011</int>
+                        <int>-1836297995</int>
                         <int>-1457212840</int>
-                        <int>-439813990</int>
+                        <int>-2070023086</int>
                         <int>-929203590</int>
-                        <int>-1704068650</int>
+                        <int>128035033</int>
                         <int>1442176119</int>
-                        <int>1124063175</int>
+                        <int>-1340948324</int>
                         <int>1278550670</int>
-                        <int>-942466785</int>
+                        <int>-1825344085</int>
                         <int>-966907027</int>
-                        <int>23394403</int>
+                        <int>118297228</int>
                         <int>-1080491618</int>
-                        <int>611843092</int>
+                        <int>1491681089</int>
                         <int>-77349402</int>
-                        <int>-305583637</int>
+                        <int>-1583401401</int>
                         <int>-877365531</int>
-                        <int>-759223315</int>
+                        <int>-1741514490</int>
                         <int>-975043764</int>
-                        <int>-259043547</int>
+                        <int>1357666787</int>
                         <int>1727365035</int>
-                        <int>873493007</int>
+                        <int>914844215</int>
                         <int>903043616</int>
-                        <int>-907015942</int>
+                        <int>382032066</int>
                         <int>1316860080</int>
-                        <int>-1130290166</int>
+                        <int>-576071525</int>
                         <int>-1141083929</int>
-                        <int>1271815511</int>
+                        <int>-355594105</int>
                         <int>850057201</int>
-                        <int>767023875</int>
+                        <int>1109570669</int>
                         <int>-24236757</int>
-                        <int>-1361902266</int>
+                        <int>691207347</int>
                         <int>-1350065220</int>
-                        <int>-1812765519</int>
+                        <int>-146899016</int>
                         <int>-2035697116</int>
-                        <int>-213938362</int>
+                        <int>2012126494</int>
                         <int>-345949410</int>
-                        <int>625900570</int>
+                        <int>1662162520</int>
                         <int>1747392483</int>
-                        <int>353821281</int>
+                        <int>-1321601988</int>
                         <int>40001610</int>
-                        <int>-1378600090</int>
+                        <int>985364395</int>
                         <int>1885182292</int>
-                        <int>1470229019</int>
+                        <int>-391267430</int>
                         <int>2035219885</int>
-                        <int>-1746974617</int>
+                        <int>-1261303042</int>
                         <int>-1583406334</int>
-                        <int>676876932</int>
+                        <int>-197219545</int>
                         <int>1834880404</int>
-                        <int>547173437</int>
+                        <int>-1953098911</int>
                         <int>-1233970445</int>
-                        <int>681919292</int>
+                        <int>700740582</int>
                         <int>713381197</int>
-                        <int>-1596807975</int>
+                        <int>-808332821</int>
                         <int>-228860273</int>
-                        <int>-994191470</int>
+                        <int>1802298387</int>
                         <int>1639326560</int>
-                        <int>-541636046</int>
+                        <int>2088869707</int>
                         <int>-378412937</int>
-                        <int>446001428</int>
+                        <int>275280997</int>
                         <int>833239772</int>
-                        <int>-33205479</int>
+                        <int>709032718</int>
                         <int>497874690</int>
-                        <int>-1330163979</int>
+                        <int>1244236989</int>
                         <int>-562329598</int>
-                        <int>-1447444848</int>
+                        <int>-1478941595</int>
                         <int>560250379</int>
-                        <int>-725765983</int>
+                        <int>-132671134</int>
                         <int>-322969709</int>
-                        <int>1630838867</int>
+                        <int>-2015001810</int>
                         <int>1553635546</int>
-                        <int>2110596249</int>
+                        <int>-1192325041</int>
                         <int>-691502169</int>
-                        <int>-1968387527</int>
+                        <int>410897430</int>
                         <int>2060921082</int>
-                        <int>1041021126</int>
+                        <int>-663532303</int>
                         <int>-1632731061</int>
-                        <int>-548348317</int>
+                        <int>-1279843125</int>
                         <int>-596491857</int>
-                        <int>1498988755</int>
+                        <int>1887492912</int>
                         <int>-705370152</int>
-                        <int>-1661831389</int>
+                        <int>41596318</int>
                         <int>-1554093907</int>
-                        <int>1285572220</int>
+                        <int>1156396961</int>
                         <int>755048715</int>
-                        <int>-1436567906</int>
+                        <int>700159085</int>
                         <int>-412225883</int>
-                        <int>287397167</int>
+                        <int>-462756272</int>
                         <int>1314915538</int>
-                        <int>-1056586532</int>
+                        <int>878365532</int>
                         <int>1950078097</int>
-                        <int>609489442</int>
+                        <int>-1641383521</int>
                         <int>1884024612</int>
-                        <int>701324223</int>
+                        <int>1993273242</int>
                         <int>385034479</int>
-                        <int>2052549554</int>
+                        <int>-1894023810</int>
                         <int>559943587</int>
-                        <int>-2096805128</int>
+                        <int>1702756057</int>
                         <int>-994482007</int>
-                        <int>-185359431</int>
+                        <int>-1879104109</int>
                         <int>-1791967926</int>
-                        <int>120315899</int>
+                        <int>-1707768738</int>
                         <int>-781998238</int>
-                        <int>1393144678</int>
+                        <int>1718315135</int>
                         <int>-1218052783</int>
-                        <int>1336338692</int>
+                        <int>-423777769</int>
                         <int>-151275411</int>
-                        <int>984653404</int>
+                        <int>-1333981461</int>
                         <int>1710973182</int>
-                        <int>-789464911</int>
+                        <int>-448766802</int>
                         <int>-32588287</int>
-                        <int>267182637</int>
+                        <int>-1086797220</int>
                         <int>-697173602</int>
-                        <int>951735082</int>
+                        <int>-105259693</int>
                         <int>2132373423</int>
-                        <int>371870717</int>
+                        <int>-2064794553</int>
                         <int>932130834</int>
-                        <int>826630718</int>
+                        <int>981580650</int>
                         <int>1958058888</int>
-                        <int>1772417765</int>
+                        <int>1516285249</int>
                       </v>
                       <iRm1>
                         <int>623</int>
@@ -9432,6 +9456,26 @@
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>STDFILAE</name>
+                <type>DOUBLE</type>
+                <value>100</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>2.4133333333333336</x>
+                  <y>2.2666666666666666</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>STDFILAF</name>
+                <type>DOUBLE</type>
+                <value>400</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>4.293333333333333</x>
+                  <y>2.3333333333333335</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
             </definitions>
           </edspn>
           <initialStringMarking>1</initialStringMarking>
@@ -9514,6 +9558,8 @@
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[15]"/>
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[16]"/>
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[17]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[18]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[19]"/>
       </definitions>
     </edspn>
   </appSPN>
