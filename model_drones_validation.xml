@@ -11,11 +11,11 @@
       <numberMarkingParameters>0</numberMarkingParameters>
       <numberRewardMeasures>2</numberRewardMeasures>
       <numberLabelModels>0</numberLabelModels>
-      <numberDefinitions>5</numberDefinitions>
+      <numberDefinitions>11</numberDefinitions>
       <places>
         <org.modcs.tools.spn.model.Place>
           <name>P_0</name>
-          <marking>1</marking>
+          <marking>0</marking>
           <stringMarking>DRONES</stringMarking>
           <positionPlace class="java.awt.geom.Point2D$Double">
             <x>6.36</x>
@@ -32,13 +32,13 @@
             <numberMarkingParameters>0</numberMarkingParameters>
             <numberRewardMeasures>2</numberRewardMeasures>
             <numberLabelModels>0</numberLabelModels>
-            <numberDefinitions>5</numberDefinitions>
+            <numberDefinitions>11</numberDefinitions>
             <places>
               <org.modcs.tools.spn.model.Place reference="../../.."/>
               <org.modcs.tools.spn.model.Place>
                 <name>P32</name>
                 <marking>0</marking>
-                <stringMarking>0</stringMarking>
+                <stringMarking>DEPOSITO</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>2.76</x>
                   <y>2.76</y>
@@ -48,12 +48,13 @@
                   <y>261</y>
                 </positionTag>
                 <edspn reference="../../.."/>
-                <initialStringMarking>0</initialStringMarking>
+                <initialStringMarking>DEPOSITO</initialStringMarking>
+                <description></description>
               </org.modcs.tools.spn.model.Place>
               <org.modcs.tools.spn.model.Place>
                 <name>P33</name>
                 <marking>0</marking>
-                <stringMarking>0</stringMarking>
+                <stringMarking>PASSO_II</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>5.32</x>
                   <y>2.72</y>
@@ -63,11 +64,12 @@
                   <y>420</y>
                 </positionTag>
                 <edspn reference="../../.."/>
-                <initialStringMarking>0</initialStringMarking>
+                <initialStringMarking>PASSO_II</initialStringMarking>
+                <description></description>
               </org.modcs.tools.spn.model.Place>
               <org.modcs.tools.spn.model.Place>
                 <name>P36</name>
-                <marking>100</marking>
+                <marking>0</marking>
                 <stringMarking>DEPOSITO</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>2.76</x>
@@ -84,7 +86,7 @@
               <org.modcs.tools.spn.model.Place>
                 <name>P37</name>
                 <marking>0</marking>
-                <stringMarking>0</stringMarking>
+                <stringMarking>PASSO_I</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>4.28</x>
                   <y>2.72</y>
@@ -94,12 +96,13 @@
                   <y>334</y>
                 </positionTag>
                 <edspn reference="../../.."/>
-                <initialStringMarking>0</initialStringMarking>
+                <initialStringMarking>PASSO_I</initialStringMarking>
+                <description></description>
               </org.modcs.tools.spn.model.Place>
               <org.modcs.tools.spn.model.Place>
                 <name>P38</name>
                 <marking>0</marking>
-                <stringMarking>0</stringMarking>
+                <stringMarking>PASSO_III</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>6.32</x>
                   <y>2.72</y>
@@ -109,12 +112,13 @@
                   <y>336</y>
                 </positionTag>
                 <edspn reference="../../.."/>
-                <initialStringMarking>0</initialStringMarking>
+                <initialStringMarking>PASSO_III</initialStringMarking>
+                <description></description>
               </org.modcs.tools.spn.model.Place>
               <org.modcs.tools.spn.model.Place>
                 <name>P39</name>
                 <marking>0</marking>
-                <stringMarking>0</stringMarking>
+                <stringMarking>PASSO_IV</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>7.48</x>
                   <y>2.72</y>
@@ -124,12 +128,13 @@
                   <y>334</y>
                 </positionTag>
                 <edspn reference="../../.."/>
-                <initialStringMarking>0</initialStringMarking>
+                <initialStringMarking>PASSO_IV</initialStringMarking>
+                <description></description>
               </org.modcs.tools.spn.model.Place>
               <org.modcs.tools.spn.model.Place>
                 <name>P40</name>
                 <marking>0</marking>
-                <stringMarking>0</stringMarking>
+                <stringMarking>PASSO_V</stringMarking>
                 <positionPlace class="java.awt.geom.Point2D$Double">
                   <x>8.76</x>
                   <y>2.76</y>
@@ -139,7 +144,7 @@
                   <y>339</y>
                 </positionTag>
                 <edspn reference="../../.."/>
-                <initialStringMarking>0</initialStringMarking>
+                <initialStringMarking>PASSO_V</initialStringMarking>
                 <description></description>
               </org.modcs.tools.spn.model.Place>
               <org.modcs.tools.spn.model.Place>
@@ -1276,8 +1281,8 @@
                 <stringExpression>E{#P41}/(E{#P40}/POUSO_DECOL)</stringExpression>
                 <value>22052.14239055665</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>3.52</x>
-                  <y>3.36</y>
+                  <x>3.72</x>
+                  <y>4.44</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1334,8 +1339,8 @@
                 <stringExpression>P{#P36=0}*100</stringExpression>
                 <value>94.41552831738069</value>
                 <position class="java.awt.geom.Point2D$Double">
-                  <x>3.56</x>
-                  <y>3.6</y>
+                  <x>3.68</x>
+                  <y>4.64</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.RewardMeasure>
@@ -1344,7 +1349,7 @@
               <org.modcs.tools.spn.model.Definition>
                 <name>DRONES</name>
                 <type>INTEGER</type>
-                <value>1</value>
+                <value>0</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>1.365</x>
                   <y>1.5583333333333327</y>
@@ -1364,7 +1369,7 @@
               <org.modcs.tools.spn.model.Definition>
                 <name>DEPOSITO</name>
                 <type>INTEGER</type>
-                <value>100</value>
+                <value>0</value>
                 <position class="java.awt.geom.Point2D$Double">
                   <x>1.0066666666666666</x>
                   <y>3.5933333333333333</y>
@@ -1388,6 +1393,66 @@
                 <position class="java.awt.geom.Point2D$Double">
                   <x>3.966666666666667</x>
                   <y>1.6</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>DEPOSITO_EM_USO</name>
+                <type>INTEGER</type>
+                <value>100</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>2.473333333333333</x>
+                  <y>3.32</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>PASSO_I</name>
+                <type>INTEGER</type>
+                <value>1</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>4.0</x>
+                  <y>3.3333333333333335</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>PASSO_II</name>
+                <type>INTEGER</type>
+                <value>1</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>5.173333333333333</x>
+                  <y>3.3266666666666667</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>PASSO_III</name>
+                <type>INTEGER</type>
+                <value>1</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>6.266666666666667</x>
+                  <y>3.34</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>PASSO_IV</name>
+                <type>INTEGER</type>
+                <value>1</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>7.373333333333333</x>
+                  <y>3.3266666666666667</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>PASSO_V</name>
+                <type>INTEGER</type>
+                <value>1</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>8.46</x>
+                  <y>3.4133333333333336</y>
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.Definition>
@@ -1443,6 +1508,12 @@
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[3]"/>
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[4]"/>
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[5]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[6]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[7]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[8]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[9]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[10]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[11]"/>
       </definitions>
     </edspn>
   </appSPN>
