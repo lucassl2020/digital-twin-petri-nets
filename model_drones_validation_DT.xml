@@ -6,12 +6,12 @@
   <appSPN>
     <edspn>
       <numberPlaces>9</numberPlaces>
-      <numberTransitions>7</numberTransitions>
+      <numberTransitions>8</numberTransitions>
       <numberDelayParameters>0</numberDelayParameters>
       <numberMarkingParameters>0</numberMarkingParameters>
       <numberRewardMeasures>3</numberRewardMeasures>
       <numberLabelModels>0</numberLabelModels>
-      <numberDefinitions>12</numberDefinitions>
+      <numberDefinitions>13</numberDefinitions>
       <places>
         <org.modcs.tools.spn.model.Place>
           <name>P_0</name>
@@ -27,12 +27,12 @@
           </positionTag>
           <edspn>
             <numberPlaces>9</numberPlaces>
-            <numberTransitions>7</numberTransitions>
+            <numberTransitions>8</numberTransitions>
             <numberDelayParameters>0</numberDelayParameters>
             <numberMarkingParameters>0</numberMarkingParameters>
             <numberRewardMeasures>3</numberRewardMeasures>
             <numberLabelModels>0</numberLabelModels>
-            <numberDefinitions>12</numberDefinitions>
+            <numberDefinitions>13</numberDefinitions>
             <places>
               <org.modcs.tools.spn.model.Place reference="../../.."/>
               <org.modcs.tools.spn.model.Place>
@@ -1097,6 +1097,145 @@
                 <priority>1</priority>
                 <stringPriority></stringPriority>
               </org.modcs.tools.spn.model.TransitionExponential>
+              <org.modcs.tools.spn.model.TransitionImmediate>
+                <name>TI0</name>
+                <firingPolicy>SINGLE_SERVER</firingPolicy>
+                <raceType>RACE_WITH_ENABLING_MEMORY</raceType>
+                <turned>false</turned>
+                <delay>0.0</delay>
+                <description>((#P_0)+(#P3) +(#P33)+(#P38) + (#P39) + (#EP40))&gt;numDrones</description>
+                <arcInputs>
+                  <org.modcs.tools.spn.model.ArcInput>
+                    <lineStyle>12</lineStyle>
+                    <place reference="../../../../../.."/>
+                    <multiplicity>1</multiplicity>
+                    <transition class="org.modcs.tools.spn.model.TransitionImmediate" reference="../../.."/>
+                  </org.modcs.tools.spn.model.ArcInput>
+                </arcInputs>
+                <positionTransition class="java.awt.geom.Point2D$Double">
+                  <x>6.346666666666667</x>
+                  <y>0.21333333333333335</y>
+                </positionTransition>
+                <countRemaingInList>0</countRemaingInList>
+                <priority>1</priority>
+                <stringPriority></stringPriority>
+                <weight>1.0</weight>
+                <logicCondition>
+                  <comparison>
+                    <markingFunctionLeft>
+                      <markingFunctionLeft>
+                        <integerValue>
+                          <marking>
+                            <placeName>
+                              <identifier>
+                                <identifier>P_0</identifier>
+                                <showedMessage>false</showedMessage>
+                              </identifier>
+                            </placeName>
+                          </marking>
+                        </integerValue>
+                      </markingFunctionLeft>
+                      <numericOperator>
+                        <operator>+</operator>
+                      </numericOperator>
+                      <markingFunctionRight>
+                        <markingFunctionLeft>
+                          <integerValue>
+                            <marking>
+                              <placeName>
+                                <identifier>
+                                  <identifier>P37</identifier>
+                                  <showedMessage>false</showedMessage>
+                                </identifier>
+                              </placeName>
+                            </marking>
+                          </integerValue>
+                        </markingFunctionLeft>
+                        <numericOperator>
+                          <operator>+</operator>
+                        </numericOperator>
+                        <markingFunctionRight>
+                          <markingFunctionLeft>
+                            <integerValue>
+                              <marking>
+                                <placeName>
+                                  <identifier>
+                                    <identifier>P33</identifier>
+                                    <showedMessage>false</showedMessage>
+                                  </identifier>
+                                </placeName>
+                              </marking>
+                            </integerValue>
+                          </markingFunctionLeft>
+                          <numericOperator>
+                            <operator>+</operator>
+                          </numericOperator>
+                          <markingFunctionRight>
+                            <markingFunctionLeft>
+                              <integerValue>
+                                <marking>
+                                  <placeName>
+                                    <identifier>
+                                      <identifier>P38</identifier>
+                                      <showedMessage>false</showedMessage>
+                                    </identifier>
+                                  </placeName>
+                                </marking>
+                              </integerValue>
+                            </markingFunctionLeft>
+                            <numericOperator>
+                              <operator>+</operator>
+                            </numericOperator>
+                            <markingFunctionRight>
+                              <markingFunctionLeft>
+                                <integerValue>
+                                  <marking>
+                                    <placeName>
+                                      <identifier>
+                                        <identifier>P39</identifier>
+                                        <showedMessage>false</showedMessage>
+                                      </identifier>
+                                    </placeName>
+                                  </marking>
+                                </integerValue>
+                              </markingFunctionLeft>
+                              <numericOperator>
+                                <operator>+</operator>
+                              </numericOperator>
+                              <markingFunctionRight>
+                                <integerValue>
+                                  <marking>
+                                    <placeName>
+                                      <identifier>
+                                        <identifier>P40</identifier>
+                                        <showedMessage>false</showedMessage>
+                                      </identifier>
+                                    </placeName>
+                                  </marking>
+                                </integerValue>
+                              </markingFunctionRight>
+                            </markingFunctionRight>
+                          </markingFunctionRight>
+                        </markingFunctionRight>
+                      </markingFunctionRight>
+                    </markingFunctionLeft>
+                    <comparisonOperator>
+                      <operator>&gt;</operator>
+                    </comparisonOperator>
+                    <markingFunctionRight>
+                      <integerValue>
+                        <integerParameter>
+                          <identifier>
+                            <identifier>numDrones</identifier>
+                            <showedMessage>false</showedMessage>
+                          </identifier>
+                        </integerParameter>
+                      </integerValue>
+                    </markingFunctionRight>
+                  </comparison>
+                </logicCondition>
+                <stringLogicCondition>((#P_0)+(#P37)+(#P33)+(#P38)+(#P39)+(#P40))&gt;(numDrones)</stringLogicCondition>
+              </org.modcs.tools.spn.model.TransitionImmediate>
             </transitions>
             <labelModels>
               <org.modcs.tools.spn.model.LabelModel>
@@ -1209,6 +1348,13 @@
                 <position class="java.awt.geom.Point2D$Double">
                   <x>5.071428571428572</x>
                   <y>0.43333333333333335</y>
+                </position>
+              </org.modcs.tools.spn.model.LabelModel>
+              <org.modcs.tools.spn.model.LabelModel>
+                <name>TI0</name>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>6.460952380952381</x>
+                  <y>0.7666666666666667</y>
                 </position>
               </org.modcs.tools.spn.model.LabelModel>
             </labelModels>
@@ -1526,6 +1672,16 @@
                 </position>
                 <description></description>
               </org.modcs.tools.spn.model.Definition>
+              <org.modcs.tools.spn.model.Definition>
+                <name>numDrones</name>
+                <type>INTEGER</type>
+                <value>100</value>
+                <position class="java.awt.geom.Point2D$Double">
+                  <x>4.506666666666667</x>
+                  <y>1.44</y>
+                </position>
+                <description></description>
+              </org.modcs.tools.spn.model.Definition>
             </definitions>
           </edspn>
           <initialStringMarking>DRONES</initialStringMarking>
@@ -1549,6 +1705,7 @@
         <org.modcs.tools.spn.model.TransitionExponential reference="../../places/org.modcs.tools.spn.model.Place/edspn/transitions/org.modcs.tools.spn.model.TransitionExponential[5]"/>
         <org.modcs.tools.spn.model.TransitionExponential reference="../../places/org.modcs.tools.spn.model.Place/edspn/transitions/org.modcs.tools.spn.model.TransitionExponential[6]"/>
         <org.modcs.tools.spn.model.TransitionExponential reference="../../places/org.modcs.tools.spn.model.Place/edspn/transitions/org.modcs.tools.spn.model.TransitionExponential[7]"/>
+        <org.modcs.tools.spn.model.TransitionImmediate reference="../../places/org.modcs.tools.spn.model.Place/edspn/transitions/org.modcs.tools.spn.model.TransitionImmediate"/>
       </transitions>
       <labelModels>
         <org.modcs.tools.spn.model.LabelModel reference="../../places/org.modcs.tools.spn.model.Place/edspn/labelModels/org.modcs.tools.spn.model.LabelModel"/>
@@ -1567,6 +1724,7 @@
         <org.modcs.tools.spn.model.LabelModel reference="../../places/org.modcs.tools.spn.model.Place/edspn/labelModels/org.modcs.tools.spn.model.LabelModel[14]"/>
         <org.modcs.tools.spn.model.LabelModel reference="../../places/org.modcs.tools.spn.model.Place/edspn/labelModels/org.modcs.tools.spn.model.LabelModel[15]"/>
         <org.modcs.tools.spn.model.LabelModel reference="../../places/org.modcs.tools.spn.model.Place/edspn/labelModels/org.modcs.tools.spn.model.LabelModel[16]"/>
+        <org.modcs.tools.spn.model.LabelModel reference="../../places/org.modcs.tools.spn.model.Place/edspn/labelModels/org.modcs.tools.spn.model.LabelModel[17]"/>
       </labelModels>
       <rewardMeasures>
         <org.modcs.tools.spn.model.RewardMeasure reference="../../places/org.modcs.tools.spn.model.Place/edspn/rewardMeasures/org.modcs.tools.spn.model.RewardMeasure"/>
@@ -1586,6 +1744,7 @@
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[10]"/>
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[11]"/>
         <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[12]"/>
+        <org.modcs.tools.spn.model.Definition reference="../../places/org.modcs.tools.spn.model.Place/edspn/definitions/org.modcs.tools.spn.model.Definition[13]"/>
       </definitions>
     </edspn>
   </appSPN>
